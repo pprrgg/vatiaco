@@ -1,0 +1,50 @@
+[
+    {
+        "categoria": "libre",
+        "codigo": "AECE010 OPTIMIZACIÓN POTENCIAS INFERIOR50 KW",
+        "sector": "Contratos_de_energía",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece010OptimizaciónPotenciasInferior50Kw",
+        "co": "AECE010O"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE010 OPTIMIZACIÓN POTENCIAS INFERIOR50 KW ABRIL2025",
+        "sector": "Contratos_de_energía",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece010OptimizaciónPotenciasInferior50KwAbril2025",
+        "co": "AECE010O"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE050 CONTRATO DE ENERGÍA INDEXADO AL POOL",
+        "sector": "Contratos_de_energía",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece050ContratoDeEnergíaIndexadoAlPool",
+        "co": "AECE050C"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE040 TRANSFORMADORES DE INTENSIDAD Y POTENCIAS CONTRATADAS",
+        "sector": "Contratos_de_energía",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece040TransformadoresDeIntensidadYPotenciasContratadas",
+        "co": "AECE040T"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE030 FACTURACIÓN POR ENERGÍA REACTIVA",
+        "sector": "Contratos_de_energía",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece030FacturaciónPorEnergíaReactiva",
+        "co": "AECE030F"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE020 OPTIMIZACIÓN POTENCIA SUPERIOR50 KW",
+        "sector": "Contratos_de_energía",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece020OptimizaciónPotenciaSuperior50Kw",
+        "co": "AECE020O"
+    }
+]
