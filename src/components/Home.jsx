@@ -64,7 +64,7 @@ const HomePage = () => {
       icon: <EnergySavingsLeafIcon sx={{ fontSize: 60, color: primaryColor }} />,
       link: "/Docs",
       image: "/img/certificados de ahorro energetico cae.jpeg",
-      group: "*",
+      group: "Certificados_de_Ahorro_Energético",
       sector: "",
       searchtext: "pool",
     },
@@ -109,8 +109,8 @@ const HomePage = () => {
     },
     {
       id: 6,
-      title_es: "Optimización de contratos de energía",
-      title_en: "Optimization of energy contracts",
+      title_es: "Optimización de Contratos de Energía",
+      title_en: "Optimization of Energy Contracts",
       description_es: "Gestión para reducir costos y evitar penalizaciones.",
       description_en: "Management to reduce costs and avoid penalties.",
       icon: <BoltIcon sx={{ fontSize: 60, color: primaryColor }} />,
@@ -129,33 +129,33 @@ const HomePage = () => {
       icon: <LightbulbIcon sx={{ fontSize: 60, color: primaryColor }} />,
       link: "/Docs",
       image: "/img/gestion-y-monitoreo-energetico.jpeg",
-      group: "Gestion_y_monitoreo_energetico",
+      group: "Gestion_y_monitoreo_energético",
       sector: "",
       searchtext: "",
     },
     {
       id: 9,
-      title_es: "Almacenamiento en Baterías de Litio",
-      title_en: "Lithium Battery Storage",
+      title_es: "Almacenamiento de Energía",
+      title_en: "Energy Storage",
       description_es: "Sistemas para almacenar energía y optimizar su uso.",
       description_en: "Systems to store energy and optimize its use.",
       icon: <BatteryChargingFullIcon sx={{ fontSize: 60, color: primaryColor }} />,
       link: "/Docs",
       image: "/img/Almacenamiento en Baterías de Litio.jpeg",
-      group: "Almacenamiento_en_baterias_de_litio",
+      group: "Almacenamiento_de_energía",
       sector: "",
       searchtext: "",
     },
     {
       id: 10,
-      title_es: "Recarga de Coches Eléctricos",
+      title_es: "Recarga de Vehículos Eléctricos",
       title_en: "Electric Vehicle Charging",
       description_es: "Soluciones para cargar vehículos eléctricos eficientemente.",
       description_en: "Solutions to efficiently charge electric vehicles.",
       icon: <EvStationIcon sx={{ fontSize: 60, color: primaryColor }} />,
       link: "/Docs",
       image: "/img/recarga-de-coches-electricos.jpeg",
-      group: "Recarga_de_coches_electricos",
+      group: "Recarga_de_vehículos_eléctricos",
       sector: "",
       searchtext: "",
     },
@@ -383,16 +383,16 @@ const HomePage = () => {
                   >
                     {card.image ? (
                       <CardMedia
-  component="img"
-  image={card.image}
-  alt={card.title_es}
-  sx={{
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    clipPath: "inset(15% round 0px)", // Recorta un 5% de cada borde
-  }}
-/>
+                        component="img"
+                        image={card.image}
+                        alt={card.title_es}
+                        sx={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          clipPath: "inset(10% round 0px)", // Recorta un 5% de cada borde
+                        }}
+                      />
                     ) : (
                       <Box
                         sx={{

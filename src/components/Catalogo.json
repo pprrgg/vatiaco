@@ -46,5 +46,13 @@
         "grupo": "Optimización_de_contratos_de_energía",
         "cod": "Aece020OptimizaciónPotenciaSuperior50Kw",
         "co": "AECE020O"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Almacenamiento_de_energía",
+        "cod": "Aein000AlmacenamientoDeEnergía",
+        "co": "AEIN000A"
     }
 ]

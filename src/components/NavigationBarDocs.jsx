@@ -1,8 +1,9 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import {
     TextField, AppBar, Box, Toolbar, List, ListItem, ListItemText, Typography,
-    Divider, InputAdornment, MenuItem, Select, FormControl, InputLabel, Grid
+    Divider, InputAdornment, MenuItem, Select, FormControl, InputLabel, Grid,ListItemIcon
 } from '@mui/material';
+
 import Catalogo from './Catalogo.json';
 import ScrollToTop from './ScrollToTop';
 import { useNavigate } from 'react-router-dom';
@@ -13,8 +14,56 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { alpha, useTheme } from '@mui/material/styles';
 import * as XLSX from 'xlsx';
+import InboxIcon from '@mui/icons-material/Inbox'; // ejemplo de icono, puedes cambiarlo
+// Aquí asumo que tienes importados estos iconos
+import EnergySavingsLeafIcon from '@mui/icons-material/EnergySavingsLeaf';
+import GroupsIcon from '@mui/icons-material/Groups';
+import SolarPowerIcon from '@mui/icons-material/SolarPower';
+import BoltIcon from '@mui/icons-material/Bolt';
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
+import EvStationIcon from '@mui/icons-material/EvStation';
+const primaryColor = '#1976d2'; // ejemplo color
 
+const cardsData = [
+    {
+      group: "Certificados_de_Ahorro_Energético",
+      icon: <EnergySavingsLeafIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+    {
+      group: "Comunidades_energeticas",
+      icon: <GroupsIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+    {
+      group: "Autoconsumo",
+      icon: <SolarPowerIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+    {
+      group: "Auditorias_energeticas",
+      icon: <SearchIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+    {
+      group: "Optimización_de_contratos_de_energía",
+      icon: <BoltIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+    {
+      group: "Gestion_y_monitoreo_energético",
+      icon: <LightbulbIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+    {
+      group: "Almacenamiento_de_energía",
+      icon: <BatteryChargingFullIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+    {
+      group: "Recarga_de_vehículos_eléctricos",
+      icon: <EvStationIcon sx={{ fontSize: 30, color: primaryColor }} />,
+    },
+  ];
 const Fichas = () => {
+    const getIconForGroup = (group) => {
+        const card = cardsData.find((c) => c.group === group);
+        return card ? card.icon : null; // o un icono por defecto
+      };
     const theme = useTheme();
     const [user] = useAuthState(auth);
     const [data, setData] = useState([]);
@@ -102,7 +151,7 @@ const Fichas = () => {
         // Actualizar sessionStorage antes de la navegación
         sessionStorage.setItem('selectedFicha', JSON.stringify(ficha));
         loadDataFromExcel(`routers/${ficha.grupo}/${ficha.sector}/${ficha.cod}.xlsx`);
-        
+
         navigate(`/doc`);
     };
 
@@ -170,36 +219,54 @@ const Fichas = () => {
             </AppBar>
 
             <Box sx={{ padding: 2 }}>
-                <List>
-                    {filteredData.map((item) => (
-                        <React.Fragment key={item.codigo}>
-                            <ListItem
-                                button
-                                onClick={() => handleFichaClick(item)}
-                                sx={{
-                                    cursor: 'pointer',
-                                    bgcolor: categoriaColores[item.categoria] || "white",
-                                    "&:hover": {
-                                        bgcolor: categoriaColores[item.categoria]
-                                            ? `${categoriaColores[item.categoria]}AA`
-                                            : "#f0f0f0"
-                                    }
-                                }}
-                            >
-                                <ListItemText
-                                    primary={
-                                        <Typography variant="body1" component="span">
-                                            {item.codigo.split(" ").slice(1).join(" ")}
-                                        </Typography>
-                                    }
-                                    secondary={`${item.codigo.split(" ")[0]} / ${item.grupo.replaceAll('_', ' ')} / ${item.sector.replaceAll('_', ' ')}`}
-                                />
-                            </ListItem>
-                            <Divider />
-                        </React.Fragment>
-                    ))}
-                </List>
-            </Box>
+      <List>
+        {filteredData.map((item) => (
+          <React.Fragment key={item.codigo}>
+            <ListItem
+              button
+              onClick={() => handleFichaClick(item)}
+              sx={{
+                cursor: 'pointer',
+                bgcolor: categoriaColores[item.categoria] || "white",
+                "&:hover": {
+                  bgcolor: categoriaColores[item.categoria]
+                    ? `${categoriaColores[item.categoria]}AA`
+                    : "#f0f0f0"
+                },
+                alignItems: 'center',
+                textAlign: 'center',
+              }}
+            >
+              <ListItemIcon sx={{ minWidth: 40, justifyContent: 'center' }}>
+                {getIconForGroup(item.grupo)}
+              </ListItemIcon>
+              <ListItemText
+                primary={
+                  <Typography
+                    variant="body1"
+                    component="div"
+                    sx={{ textAlign: 'center', width: '100%' }}
+                  >
+                    {item.codigo.split(" ").slice(1).join(" ")}
+                  </Typography>
+                }
+                secondary={
+                  <Typography
+                    variant="body2"
+                    component="div"
+                    color="text.secondary"
+                    sx={{ textAlign: 'center', width: '100%', mt: 0.5 }}
+                  >
+                    {`${item.codigo.split(" ")[0]} / ${item.grupo.replaceAll('_', ' ')} / ${item.sector.replaceAll('_', ' ')}`}
+                  </Typography>
+                }
+              />
+            </ListItem>
+            <Divider />
+          </React.Fragment>
+        ))}
+      </List>
+    </Box>
 
             <ScrollToTop />
             <ToastContainer />
