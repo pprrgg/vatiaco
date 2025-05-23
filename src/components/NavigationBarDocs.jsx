@@ -15,55 +15,9 @@ import "react-toastify/dist/ReactToastify.css";
 import { alpha, useTheme } from '@mui/material/styles';
 import * as XLSX from 'xlsx';
 import InboxIcon from '@mui/icons-material/Inbox'; // ejemplo de icono, puedes cambiarlo
-// Aquí asumo que tienes importados estos iconos
-import EnergySavingsLeafIcon from '@mui/icons-material/EnergySavingsLeaf';
-import GroupsIcon from '@mui/icons-material/Groups';
-import SolarPowerIcon from '@mui/icons-material/SolarPower';
-import BoltIcon from '@mui/icons-material/Bolt';
-import LightbulbIcon from '@mui/icons-material/Lightbulb';
-import BatteryChargingFullIcon from '@mui/icons-material/BatteryChargingFull';
-import EvStationIcon from '@mui/icons-material/EvStation';
-const primaryColor = '#1976d2'; // ejemplo color
 
-const cardsData = [
-    {
-      group: "Certificados_de_Ahorro_Energético",
-      icon: <EnergySavingsLeafIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-    {
-      group: "Comunidades_energeticas",
-      icon: <GroupsIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-    {
-      group: "Autoconsumo",
-      icon: <SolarPowerIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-    {
-      group: "Auditorias_energeticas",
-      icon: <SearchIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-    {
-      group: "Optimización_de_contratos_de_energía",
-      icon: <BoltIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-    {
-      group: "Gestion_y_monitoreo_energético",
-      icon: <LightbulbIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-    {
-      group: "Almacenamiento_de_energía",
-      icon: <BatteryChargingFullIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-    {
-      group: "Recarga_de_vehículos_eléctricos",
-      icon: <EvStationIcon sx={{ fontSize: 30, color: primaryColor }} />,
-    },
-  ];
+
 const Fichas = () => {
-    const getIconForGroup = (group) => {
-        const card = cardsData.find((c) => c.group === group);
-        return card ? card.icon : null; // o un icono por defecto
-      };
     const theme = useTheme();
     const [user] = useAuthState(auth);
     const [data, setData] = useState([]);
@@ -238,7 +192,7 @@ const Fichas = () => {
               }}
             >
               <ListItemIcon sx={{ minWidth: 40, justifyContent: 'center' }}>
-                {getIconForGroup(item.grupo)}
+                <InboxIcon />
               </ListItemIcon>
               <ListItemText
                 primary={

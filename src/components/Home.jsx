@@ -171,7 +171,7 @@ const HomePage = () => {
       link: "/Docs",
       group: "Asesoría_Energética",
       sector: "",
-      searchtext: "pool",
+      searchtext: "",
     },
     {
       title_es: "¿Con quiénes se puede crear una comunidad energética?",
