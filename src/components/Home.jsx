@@ -35,10 +35,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTheme } from "@mui/material/styles";
 import { Box } from "@mui/material";
+const primaryColor = "#000000"; // Color negro definido como variable
+const fuchsiaColor = "#D100D1"; // Código de color fucsia
 
 const HomePage = () => {
-      const navigate = useNavigate();
-  
+  const navigate = useNavigate();
+
   const theme = useTheme();
   const primaryColor = "#1976d2";
 
@@ -158,8 +160,8 @@ const HomePage = () => {
       searchtext: "",
     },
   ];
-  
-  
+
+
   const accordionData = [
     {
       title_es: "¿Qué es un CAE?",
@@ -224,7 +226,7 @@ const HomePage = () => {
       searchtext: "",
     },
   ];
-  
+
   // Sección informativa alternada con más temas
   const alternatingData = [
     {
@@ -320,31 +322,31 @@ const HomePage = () => {
           <Slider {...carouselSettings}>
             {cardsData.map((card) => (
               <div key={card.id}>
-                <div
-                  style={{
+                <Box
+                  sx={{
                     display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
                     alignItems: "center",
-                    height: "400px",
+                    height: { xs: "auto", md: "400px" },
                     border: "1px solid",
                     borderColor: primaryColor,
                     borderRadius: "8px",
                     overflow: "hidden",
+                    backgroundColor: primaryColor, // Fondo azul para todo el slide
                   }}
                 >
                   {/* Texto y botón */}
-                  <div
-                    style={{
+                  <Box
+                    sx={{
                       flex: 1,
-                      padding: "20px 40px",
-                      height: "100%",
-                      // background: `linear-gradient(to right, ${primaryColor}, transparent)`,
-                      background: primaryColor,
+                      padding: { xs: "20px", md: "20px 40px" },
                       display: "flex",
                       flexDirection: "column",
                       justifyContent: "center",
                       alignItems: "flex-start",
                       textAlign: "left",
                       color: "white",
+                      width: "100%",
                     }}
                   >
                     <Typography variant="h4" sx={{ fontWeight: "bold", mb: 1 }}>
@@ -359,28 +361,41 @@ const HomePage = () => {
                     <Typography variant="body2" sx={{ fontStyle: "italic", mb: 3, opacity: 0.7 }}>
                       {card.description_en}
                     </Typography>
-                    <Button variant="contained" color="secondary" 
-                  onClick={() => handleButtonClick(card.group, card.sector, card.searchtext, card.link)}
-                  >
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      onClick={() =>
+                        handleButtonClick(card.group, card.sector, card.searchtext, card.link)
+                      }
+                    >
                       Ver más / See more
                     </Button>
-                  </div>
-                  <div style={{ flex: 1, height: "100%", minWidth: "50%", minHeight: "100%", backgroundColor: "white" }}>
+                  </Box>
+
+                  {/* Imagen */}
+                  <Box
+                    sx={{
+                      flex: 1,
+                      width: "100%",
+                      height: { xs: "200px", md: "100%" },
+                      backgroundColor: "transparent", // Fondo ya cubierto por el padre
+                    }}
+                  >
                     {card.image ? (
                       <CardMedia
-                        component="img"
-                        image={card.image}
-                        alt={card.title_es}
-                        sx={{
-                          width: "100%",
-                          height: "100%",
-                          objectFit: "cover",  // Llena el contenedor recortando si es necesario
-                          display: "block",
-                        }}
-                      />
+  component="img"
+  image={card.image}
+  alt={card.title_es}
+  sx={{
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    clipPath: "inset(15% round 0px)", // Recorta un 5% de cada borde
+  }}
+/>
                     ) : (
-                      <div
-                        style={{
+                      <Box
+                        sx={{
                           width: "100%",
                           height: "100%",
                           display: "flex",
@@ -389,19 +404,21 @@ const HomePage = () => {
                         }}
                       >
                         {card.icon}
-                      </div>
+                      </Box>
                     )}
-                  </div>
-
-
-                </div>
+                  </Box>
+                </Box>
               </div>
             ))}
           </Slider>
+
+
         </Container>
       </div>
 
       <div id="inicio">
+
+
         <Container
           sx={{
             py: 6,
@@ -411,14 +428,55 @@ const HomePage = () => {
             position: "relative",
           }}
         >
-
-          <Typography
-            variant="h2"
-            component="h1"
-            sx={{ fontWeight: "bold", mb: 1, color: primaryColor }}
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              mb: 2,
+            }}
           >
-            Vatiaco
-          </Typography>
+            <Box
+              sx={{
+                border: `2px solid ${fuchsiaColor}`,
+                padding: "4px 8px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <Typography
+                variant="h4"
+                component="div"
+                sx={{
+                  fontFamily: "'Cinzel', serif",
+                  textTransform: "uppercase",
+                  color: fuchsiaColor,
+                  lineHeight: 1.2,
+                  letterSpacing: "0.52em", // Ajusta el valor según tu gusto
+                }}
+              >
+                Vatiaco
+              </Typography>
+              <Box
+                component="span"
+                sx={{
+                  fontSize: "0.8rem",
+                  // textTransform: "uppercase", // Puedes volver a activarlo si quieres todo en mayúsculas
+                  color: "white",
+                  backgroundColor: fuchsiaColor,
+                  padding: "2px 6px",
+                  borderRadius: "4px",
+                  mt: "4px",
+                  lineHeight: 1,
+                  letterSpacing: "1.29615em", // Ajusta el espaciado aquí
+                }}
+              >
+                Engineering
+              </Box>
+            </Box>
+          </Box>
+
           <Typography
             variant="h6"
             color="textPrimary"
@@ -429,6 +487,7 @@ const HomePage = () => {
             </Box>{" "}
             que ahorran hoy y transforman el mañana.
           </Typography>
+
           <Typography
             variant="h6"
             color="textSecondary"
@@ -440,6 +499,8 @@ const HomePage = () => {
             that save today and transform tomorrow.
           </Typography>
         </Container>
+
+
       </div>
 
       <div id="servicios">
@@ -493,8 +554,8 @@ const HomePage = () => {
                       {card.description_en}
                     </Typography>
                   </CardContent>
-                  <Button variant="contained" color="secondary" 
-                  onClick={() => handleButtonClick(card.group, card.sector, card.searchtext, card.link)}
+                  <Button variant="contained" color="secondary"
+                    onClick={() => handleButtonClick(card.group, card.sector, card.searchtext, card.link)}
                   >
                     Ver más / See more
                   </Button>

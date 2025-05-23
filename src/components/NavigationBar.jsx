@@ -109,33 +109,57 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            mr: 2,
-                            display: { xs: "none", md: "flex" },
-                            fontFamily: "monospace",
-                            fontWeight: 700,
-                            letterSpacing: ".3rem",
-                            color: fuchsiaColor, // Aplicar color fucsia
-                            textDecoration: "none",
-                            border: `2px solid ${fuchsiaColor}`, // Borde con color fucsia
-                            padding: "2px 4px",
-                        }}
-                    >
-                        Watt
-                        <span style={{
-                            color: "white",
-                            backgroundColor: fuchsiaColor, // Fondo fucsia
-                            padding: "0px 2px",
-                            borderRadius: "4px",
-                        }}>
-                            Bucket
-                        </span>
-                    </Typography>
+                <Typography
+  variant="h6"
+  noWrap
+  component="a"
+  href="/"
+  sx={{
+    mr: 2,
+    display: { xs: "none", md: "flex" },
+    fontFamily: "monospace",
+    fontWeight: 700,
+    letterSpacing: ".3rem",
+    color: fuchsiaColor,
+    textDecoration: "none",
+  }}
+>
+  <span
+    style={{
+      border: `2px solid ${fuchsiaColor}`,
+      padding: "1px 1px",
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+    }}
+  >
+    <span
+      style={{
+        fontFamily: "'Cinzel', serif", // Asegúrate de haber importado esta fuente
+        textTransform: 'uppercase',
+        fontSize: '1.2rem',
+        lineHeight: .5,
+      }}
+    >
+      Vatiaco
+    </span>
+    <span
+      style={{
+        fontSize: '0.5rem',
+        textTransform: 'uppercase',
+        color: "white",
+        backgroundColor: fuchsiaColor,
+        padding: "1px 4px",
+        borderRadius: "4px",
+        marginTop: "2px",
+        lineHeight: 1,
+      }}
+    >
+      Engineering
+    </span>
+  </span>
+</Typography>
+
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
@@ -165,39 +189,61 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
                             ))}
                         </Menu>
                     </Box>
+ 
                     <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="/"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: fuchsiaColor, // Aplicar color fucsia
-                            textDecoration: 'none',
-                        }}
-                    >
-                        <span
-                            style={{
-                                border: `2px solid ${fuchsiaColor}`, // Borde fucsia
-                                padding: "2px 1px",
-                            }}
-                        >
-                            Watt
-                            <span style={{
-                                color: "white",
-                                backgroundColor: fuchsiaColor, // Fondo fucsia
-                                padding: "0px 2px",
-                                borderRadius: "4px",
-                            }}>
-                                Bucket
-                            </span>
-                        </span>
-                    </Typography>
+  variant="h6"
+  noWrap
+  component="a"
+  href="/"
+  sx={{
+    mr: 2,
+    display: { xs: 'flex', md: 'none' },
+    flexGrow: 1,
+    fontFamily: 'monospace',
+    fontWeight: 700,
+    letterSpacing: '.3rem',
+    color: fuchsiaColor,
+    textDecoration: 'none',
+  }}
+>
+  <span
+    style={{
+      border: `2px solid ${fuchsiaColor}`,
+      padding: "1px 1px",
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'flex-start',
+    }}
+  >
+    <span
+      style={{
+        fontFamily: "'Cinzel', serif",
+        textTransform: 'uppercase',
+        fontSize: '1.2rem',
+        lineHeight: .5,
+      }}
+    >
+      Vatiaco
+    </span>
+    <span
+      style={{
+        fontSize: '0.5rem',
+        textTransform: 'uppercase',
+        color: "white",
+        backgroundColor: fuchsiaColor,
+        padding: "1px 4px",
+        borderRadius: "4px",
+        marginTop: "2px",
+        lineHeight: 1,
+      }}
+    >
+      Engineering
+    </span>
+  </span>
+</Typography>
+
+
+
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
