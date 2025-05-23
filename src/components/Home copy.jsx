@@ -39,23 +39,6 @@ const primaryColor = "#000000"; // Color negro definido como variable
 const fuchsiaColor = "#D100D1"; // Código de color fucsia
 
 const HomePage = () => {
-
-// Función para generar color desde string (la defines fuera del componente)
-const stringToColor = (str, alpha = "99") => {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = str.charCodeAt(i) + ((hash << 5) - hash);
-  }
-
-  let color = "#";
-  for (let i = 0; i < 3; i++) {
-    const value = (hash >> (i * 8)) & 0xff;
-    color += (`00${value.toString(16)}`).slice(-2);
-  }
-
-  return color + alpha;
-};
-
   const navigate = useNavigate();
 
   const theme = useTheme();
@@ -335,100 +318,99 @@ const stringToColor = (str, alpha = "99") => {
           }}
         >
 
-<Slider {...carouselSettings}>
-  {cardsData.map((card) => (
-    <div key={card.id}>
-<Box
-  sx={{
-    display: "flex",
-    flexDirection: { xs: "column", md: "row" },
-    alignItems: "center",
-    height: { xs: "auto", md: "400px" },
-    border: "1px solid",
-    borderColor: primaryColor,
-    borderRadius: "8px",
-    overflow: "hidden",
-    backgroundColor: stringToColor(card.group, "cc"), // color más intenso, sin hover
-    color: "white",
-  }}
->
-        {/* contenido dentro del Box */}
-        {/* Texto y botón */}
-        <Box
-          sx={{
-            flex: 1,
-            padding: { xs: "20px", md: "20px 40px" },
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "flex-start",
-            textAlign: "left",
-            color: "white",
-            width: "100%",
-          }}
-        >
-          <Typography variant="h4" sx={{ fontWeight: "bold", mb: 1 }}>
-            {card.title_es}
-          </Typography>
-          <Typography variant="subtitle1" sx={{ fontStyle: "italic", mb: 1, opacity: 0.7 }}>
-            {card.title_en}
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 2 }}>
-            {card.description_es}
-          </Typography>
-          <Typography variant="body2" sx={{ fontStyle: "italic", mb: 3, opacity: 0.7 }}>
-            {card.description_en}
-          </Typography>
-          <Button
-            variant="contained"
-            color="secondary"
-            onClick={() =>
-              handleButtonClick(card.group, card.sector, card.searchtext, card.link)
-            }
-          >
-            Ver más / See more
-          </Button>
-        </Box>
+          {/* Slider principal */}
+          <Slider {...carouselSettings}>
+            {cardsData.map((card) => (
+              <div key={card.id}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
+                    alignItems: "center",
+                    height: { xs: "auto", md: "400px" },
+                    border: "1px solid",
+                    borderColor: primaryColor,
+                    borderRadius: "8px",
+                    overflow: "hidden",
+                    backgroundColor: primaryColor, // Fondo azul para todo el slide
+                  }}
+                >
+                  {/* Texto y botón */}
+                  <Box
+                    sx={{
+                      flex: 1,
+                      padding: { xs: "20px", md: "20px 40px" },
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "flex-start",
+                      textAlign: "left",
+                      color: "white",
+                      width: "100%",
+                    }}
+                  >
+                    <Typography variant="h4" sx={{ fontWeight: "bold", mb: 1 }}>
+                      {card.title_es}
+                    </Typography>
+                    <Typography variant="subtitle1" sx={{ fontStyle: "italic", mb: 1, opacity: 0.7 }}>
+                      {card.title_en}
+                    </Typography>
+                    <Typography variant="body1" sx={{ mb: 2 }}>
+                      {card.description_es}
+                    </Typography>
+                    <Typography variant="body2" sx={{ fontStyle: "italic", mb: 3, opacity: 0.7 }}>
+                      {card.description_en}
+                    </Typography>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      onClick={() =>
+                        handleButtonClick(card.group, card.sector, card.searchtext, card.link)
+                      }
+                    >
+                      Ver más / See more
+                    </Button>
+                  </Box>
 
-        {/* Imagen */}
-        <Box
-          sx={{
-            flex: 1,
-            width: "100%",
-            height: { xs: "200px", md: "100%" },
-            backgroundColor: "transparent",
-          }}
-        >
-          {card.image ? (
-            <CardMedia
-              component="img"
-              image={card.image}
-              alt={card.title_es}
-              sx={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                clipPath: "inset(10% round 0px)",
-              }}
-            />
-          ) : (
-            <Box
-              sx={{
-                width: "100%",
-                height: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {card.icon}
-            </Box>
-          )}
-        </Box>
-      </Box>
-    </div>
-  ))}
-</Slider>
+                  {/* Imagen */}
+                  <Box
+                    sx={{
+                      flex: 1,
+                      width: "100%",
+                      height: { xs: "200px", md: "100%" },
+                      backgroundColor: "transparent", // Fondo ya cubierto por el padre
+                    }}
+                  >
+                    {card.image ? (
+                      <CardMedia
+                        component="img"
+                        image={card.image}
+                        alt={card.title_es}
+                        sx={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          clipPath: "inset(10% round 0px)", // Recorta un 5% de cada borde
+                        }}
+                      />
+                    ) : (
+                      <Box
+                        sx={{
+                          width: "100%",
+                          height: "100%",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        {card.icon}
+                      </Box>
+                    )}
+                  </Box>
+                </Box>
+              </div>
+            ))}
+          </Slider>
 
 
         </Container>

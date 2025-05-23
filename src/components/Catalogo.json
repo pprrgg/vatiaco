@@ -1,6 +1,30 @@
 [
     {
         "categoria": "libre",
+        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Gestion_y_monitoreo_energético",
+        "cod": "Aein000AlmacenamientoDeEnergía",
+        "co": "AEIN000A"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Certificados_de_Ahorro_Energético",
+        "cod": "Aein000AlmacenamientoDeEnergía",
+        "co": "AEIN000A"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Recarga_de_vehículos_eléctricos",
+        "cod": "Aein000AlmacenamientoDeEnergía",
+        "co": "AEIN000A"
+    },
+    {
+        "categoria": "libre",
         "codigo": "AECE010 OPTIMIZACIÓN POTENCIAS INFERIOR50 KW",
         "sector": "Contratos_de_energía",
         "grupo": "Optimización_de_contratos_de_energía",
@@ -49,9 +73,33 @@
     },
     {
         "categoria": "libre",
+        "codigo": "OC000 OPTIMIZACIÓN DE CONTRATOS DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Oc000OptimizaciónDeContratosDeEnergía",
+        "co": "OC000O"
+    },
+    {
+        "categoria": "libre",
         "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
         "sector": "Intro",
         "grupo": "Almacenamiento_de_energía",
+        "cod": "Aein000AlmacenamientoDeEnergía",
+        "co": "AEIN000A"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Comunidades_energeticas",
+        "cod": "Aein000AlmacenamientoDeEnergía",
+        "co": "AEIN000A"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Autoconsumo",
         "cod": "Aein000AlmacenamientoDeEnergía",
         "co": "AEIN000A"
     }
