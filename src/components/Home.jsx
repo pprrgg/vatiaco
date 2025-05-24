@@ -83,7 +83,7 @@ const HomePage = () => {
       image: "/img/certificados de ahorro energetico cae.jpeg",
       group: "Certificados_de_Ahorro_Energético",
       sector: "",
-      searchtext: "pool",
+      searchtext: "",
     },
     {
       id: 2,
@@ -684,7 +684,7 @@ const HomePage = () => {
         </Container>
       </div>
 
-      <div id="informacion">
+      {0 && (<div id="informacion">
         {/* Sección informativa alternada bilingüe */}
         <Container
           sx={{
@@ -739,7 +739,10 @@ const HomePage = () => {
             </Grid>
           ))}
         </Container>
-      </div>
+      </div>)}
+
+
+
 
       <div id="contacto">
         <Container
@@ -750,100 +753,90 @@ const HomePage = () => {
             mt: 6,
           }}
         >
-          <Typography variant="h4" sx={{ color: primaryColor, fontWeight: "bold", mb: 3 }} align="center">
+          <Typography
+            variant="h4"
+            sx={{ color: primaryColor, fontWeight: "bold", mb: 3 }}
+            align="center"
+          >
             Contáctanos / Contact Us
           </Typography>
           <Grid container spacing={4}>
+            {/* Formulario de Google */}
             <Grid item xs={12} md={6}>
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  alert("Formulario enviado. ¡Gracias por contactar!");
-                }}
-              >
-                <Grid container spacing={2}>
-                  <Grid item xs={12}>
-                    <input
-                      type="text"
-                      placeholder="Nombre / Name"
-                      required
-                      style={{
-                        width: "100%",
-                        padding: "12px",
-                        borderRadius: "8px",
-                        border: "1px solid #ccc",
-                        fontSize: "16px",
-                      }}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <input
-                      type="email"
-                      placeholder="Correo / Email"
-                      required
-                      style={{
-                        width: "100%",
-                        padding: "12px",
-                        borderRadius: "8px",
-                        border: "1px solid #ccc",
-                        fontSize: "16px",
-                      }}
-                    />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <textarea
-                      placeholder="Mensaje / Message"
-                      rows={5}
-                      required
-                      style={{
-                        width: "100%",
-                        padding: "12px",
-                        borderRadius: "8px",
-                        border: "1px solid #ccc",
-                        fontSize: "16px",
-                      }}
-                    ></textarea>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Button type="submit" variant="contained" color="primary" fullWidth>
-                      Enviar / Send
-                    </Button>
-                  </Grid>
-                </Grid>
-              </form>
+              <Box sx={{ width: "100%", height: "1200px", border: 0 }}>
+                <iframe
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSdkEMjvtRgogRAhKr2bGcf05CxZwt5LNqQKiVxWOfHciIH5lw/viewform?embedded=true"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  marginHeight="0"
+                  marginWidth="0"
+                  title="Formulario de contacto"
+                >
+                  Cargando…
+                </iframe>
+              </Box>
             </Grid>
 
+            {/* Información, mapa e imagen */}
             <Grid item xs={12} md={6}>
               <Box sx={{ pl: { md: 4 } }}>
                 <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
                   Dirección / Address:
                 </Typography>
-                <Typography variant="body1" sx={{ mb: 1 }}>
+                <Typography variant="body1" sx={{ mb: 2 }}>
                   C. Moby Dick, 30. 29004, Málaga
                 </Typography>
 
-                <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
-                  Teléfono / Phone:
-                </Typography>
-                <Typography variant="body1" sx={{ mb: 1 }}>
-                  +34 951 73 34 91
-                </Typography>
+                {/* Mapa de OpenStreetMap */}
+                <Box sx={{ mb: 2, borderRadius: 2, overflow: "hidden" }}>
+                  <iframe
+                    title="Mapa Sede"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-4.4585,36.6848,-4.4485,36.6948&layer=mapnik&marker=36.6898,-4.4535"
+                    width="100%"
+                    height="250"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                  ></iframe>
+                </Box>
 
-                <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
-                  Email:
-                </Typography>
-                <Typography variant="body1">
-                  <a href="mailto:info@vatiaco.com" style={{ color: primaryColor }}>
-                    info@vatiaco.com
-                  </a>
-                </Typography>
+                {/* Imagen de la sede */}
+                <Box>
+                  <img
+                    src="/img/sede.jpeg"
+                    alt="Foto de la sede"
+                    style={{
+                      width: "100%",
+                      borderRadius: "8px",
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                    }}
+                  />
+                </Box>
+
+                {/* Teléfono y email */}
+                <Box sx={{ mt: 2 }}>
+                  <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
+                    Teléfono / Phone:
+                  </Typography>
+                  <Typography variant="body1" sx={{ mb: 1 }}>
+                    +34 951 73 34 91
+                  </Typography>
+
+                  <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1 }}>
+                    Email:
+                  </Typography>
+                  <Typography variant="body1">
+                    <a href="mailto:info@vatiaco.com" style={{ color: primaryColor }}>
+                      info@vatiaco.com
+                    </a>
+                  </Typography>
+                </Box>
               </Box>
             </Grid>
           </Grid>
         </Container>
       </div>
-
-
 
 
 
