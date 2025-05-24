@@ -463,16 +463,16 @@ const HomePage = () => {
           >
             <Box
               sx={{
-                padding: "0px 16px", // menos padding vertical para ajustar altura
+                padding: "16px 32px", // duplicado respecto al original
                 backgroundColor: "#0066cc",
-                borderRadius: "8px",
+                borderRadius: "16px", // duplicado
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
               }}
             >
               <Typography
-                variant="h4"
+                variant="h2" // era h4
                 component="div"
                 sx={{
                   fontFamily: "'Roboto', 'Arial', sans-serif",
@@ -480,22 +480,21 @@ const HomePage = () => {
                   textTransform: "capitalize",
                   color: "white",
                   lineHeight: 1.1,
-                  letterSpacing: "0.05em",
+                  letterSpacing: "0.1em", // duplicado
                 }}
               >
                 Vatiaco
               </Typography>
               <Typography
-                variant="caption"
                 component="div"
                 sx={{
-                  fontSize: "0.55rem",
+                  fontSize: "0.7rem", // duplicado desde 0.55rem
                   fontWeight: 300,
                   textTransform: "uppercase",
                   color: "white",
-                  mt: "-5px",
+                  mt: "-10px", // duplicado
                   lineHeight: 1,
-                  letterSpacing: "0.55em",
+                  letterSpacing: "1.1em", // duplicado
                   fontFamily: "'Roboto', 'Arial', sans-serif",
                 }}
               >
@@ -503,6 +502,7 @@ const HomePage = () => {
               </Typography>
             </Box>
           </Box>
+
 
 
 

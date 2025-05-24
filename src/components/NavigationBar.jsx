@@ -111,56 +111,62 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Typography
-                        variant="h6"
-                        noWrap
+
+                    <Box
                         component="a"
                         href="/"
                         sx={{
-                            mr: 2,
-                            display: { xs: "none", md: "flex" },
-                            fontFamily: "monospace",
-                            fontWeight: 700,
-                            letterSpacing: ".3rem",
-                            color: fuchsiaColor,
-                            textDecoration: "none",
+                            display: { xs: 'none', md: 'flex' }, // mantiene el mismo comportamiento responsive
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            mb: 1, // antes 2
+                            textDecoration: 'none',
                         }}
                     >
-                        <span
-                            style={{
-                                border: `2px solid ${fuchsiaColor}`,
-                                padding: "1px 1px",
+                        <Box
+                            sx={{
+                                padding: '0px 8px', // antes 0px 16px
+                                backgroundColor: '#0066cc',
+                                borderRadius: '8px', // puedes bajar a 4px si quieres proporcional
                                 display: 'flex',
                                 flexDirection: 'column',
-                                alignItems: 'flex-start',
+                                alignItems: 'center',
+                                color: '#fuchsia', // reemplaza con fuchsiaColor si lo tienes definido
                             }}
                         >
-                            <span
-                                style={{
-                                    fontFamily: "'Cinzel', serif", // Asegúrate de haber importado esta fuente
-                                    textTransform: 'uppercase',
-                                    fontSize: '1.2rem',
-                                    lineHeight: .5,
+                            <Typography
+                                variant="h5" // antes h4, h5 es más pequeño
+                                component="div"
+                                sx={{
+                                    fontFamily: "'Roboto', 'Arial', sans-serif",
+                                    fontWeight: 900,
+                                    textTransform: 'capitalize',
+                                    color: 'white',
+                                    lineHeight: 1.1,
+                                    letterSpacing: '0.025em', // antes 0.05em
                                 }}
                             >
                                 Vatiaco
-                            </span>
-                            <span
-                                style={{
-                                    fontSize: '0.5rem',
+                            </Typography>
+                            <Typography
+                                variant="caption"
+                                component="div"
+                                sx={{
+                                    fontSize: '0.275rem', // antes 0.55rem
+                                    fontWeight: 300,
                                     textTransform: 'uppercase',
-                                    color: "white",
-                                    backgroundColor: fuchsiaColor,
-                                    padding: "1px 4px",
-                                    borderRadius: "4px",
-                                    marginTop: "2px",
+                                    color: 'white',
+                                    mt: '-2.5px', // antes -5px
                                     lineHeight: 1,
+                                    letterSpacing: '0.275em', // antes 0.55em
+                                    fontFamily: "'Roboto', 'Arial', sans-serif",
                                 }}
                             >
                                 Engineering
-                            </span>
-                        </span>
-                    </Typography>
+                            </Typography>
+                        </Box>
+                    </Box>
+
 
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -191,60 +197,63 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
                             ))}
                         </Menu>
                     </Box>
-
-                    <Typography
-                        variant="h6"
-                        noWrap
+                    <Box
                         component="a"
                         href="/"
                         sx={{
-                            mr: 2,
+                            mr: 1, // antes 2
                             display: { xs: 'flex', md: 'none' },
                             flexGrow: 1,
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: fuchsiaColor,
+                            justifyContent: "center",
+                            alignItems: "center",
+                            mb: 1, // antes 2
                             textDecoration: 'none',
+                            whiteSpace: 'nowrap',
                         }}
                     >
-                        <span
-                            style={{
-                                border: `2px solid ${fuchsiaColor}`,
-                                padding: "1px 1px",
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'flex-start',
+                        <Box
+                            sx={{
+                                padding: "0px 8px", // antes 0px 16px
+                                backgroundColor: "#0066cc",
+                                borderRadius: "8px", // se puede dejar igual o bajar a 4px para más proporción
+                                display: "flex",
+                                flexDirection: "column",
+                                alignItems: "center",
+                                color: "white",
                             }}
                         >
-                            <span
-                                style={{
-                                    fontFamily: "'Cinzel', serif",
-                                    textTransform: 'uppercase',
-                                    fontSize: '1.2rem',
-                                    lineHeight: .5,
+                            <Typography
+                                variant="h5" // antes h4, h5 es un poco más pequeño
+                                component="div"
+                                sx={{
+                                    fontFamily: "'Roboto', 'Arial', sans-serif",
+                                    fontWeight: 900,
+                                    textTransform: "capitalize",
+                                    lineHeight: 1.1,
+                                    letterSpacing: "0.025em", // antes 0.05em, a la mitad
+                                    color: "inherit",
                                 }}
                             >
                                 Vatiaco
-                            </span>
-                            <span
-                                style={{
-                                    fontSize: '0.5rem',
-                                    textTransform: 'uppercase',
-                                    color: "white",
-                                    backgroundColor: fuchsiaColor,
-                                    padding: "1px 4px",
-                                    borderRadius: "4px",
-                                    marginTop: "2px",
+                            </Typography>
+                            <Typography
+                                variant="caption"
+                                component="div"
+                                sx={{
+                                    fontSize: "0.275rem", // antes 0.55rem
+                                    fontWeight: 300,
+                                    textTransform: "uppercase",
+                                    mt: "-2.5px", // antes -5px
                                     lineHeight: 1,
+                                    letterSpacing: "0.275em", // antes 0.55em
+                                    fontFamily: "'Roboto', 'Arial', sans-serif",
+                                    color: "inherit",
                                 }}
                             >
                                 Engineering
-                            </span>
-                        </span>
-                    </Typography>
-
-
+                            </Typography>
+                        </Box>
+                    </Box>
 
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
