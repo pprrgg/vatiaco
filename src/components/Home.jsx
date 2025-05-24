@@ -324,7 +324,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <div id="carrusel">
+      {1 && (<div id="carrusel">
         <Container
           sx={{
             py: 6,
@@ -441,9 +441,9 @@ const HomePage = () => {
 
 
         </Container>
-      </div>
+      </div>)}
 
-      <div id="inicio">
+      {1 && (<div id="inicio">
         <Container
           sx={{
             py: 6,
@@ -526,9 +526,9 @@ const HomePage = () => {
         </Container>
 
 
-      </div>
+      </div>)}
 
-      <div id="servicios">
+      {1 && (<div id="servicios">
         <Container
           sx={{
             py: 6,
@@ -642,9 +642,9 @@ const HomePage = () => {
           </Grid>
         </Container>
 
-      </div>
+      </div>)}
 
-      <div id="faq">
+      {1 && (<div id="faq">
         {/* Preguntas frecuentes bilingües */}
         <Container
           sx={{
@@ -682,7 +682,7 @@ const HomePage = () => {
             </Accordion>
           ))}
         </Container>
-      </div>
+      </div>)}
 
       {0 && (<div id="informacion">
         {/* Sección informativa alternada bilingüe */}
@@ -741,10 +741,7 @@ const HomePage = () => {
         </Container>
       </div>)}
 
-
-
-
-      <div id="contacto">
+      {1 && (<div id="contacto">
         <Container
           sx={{
             py: 6,
@@ -836,7 +833,7 @@ const HomePage = () => {
             </Grid>
           </Grid>
         </Container>
-      </div>
+      </div>)}
 
 
 
