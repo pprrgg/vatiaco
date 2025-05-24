@@ -463,8 +463,9 @@ const HomePage = () => {
           >
             <Box
               sx={{
-                border: `2px solid ${fuchsiaColor}`,
-                padding: "4px 8px",
+                padding: "0px 16px", // menos padding vertical para ajustar altura
+                backgroundColor: "#0066cc",
+                borderRadius: "8px",
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
@@ -474,33 +475,39 @@ const HomePage = () => {
                 variant="h4"
                 component="div"
                 sx={{
-                  fontFamily: "'Cinzel', serif",
-                  textTransform: "uppercase",
-                  color: fuchsiaColor,
-                  lineHeight: 1.2,
-                  letterSpacing: "0.52em", // Ajusta el valor según tu gusto
+                  fontFamily: "'Roboto', 'Arial', sans-serif",
+                  fontWeight: 900,
+                  textTransform: "capitalize",
+                  color: "white",
+                  lineHeight: 1.1,
+                  letterSpacing: "0.05em",
                 }}
               >
                 Vatiaco
               </Typography>
-              <Box
-                component="span"
+              <Typography
+                variant="caption"
+                component="div"
                 sx={{
-                  fontSize: "0.8rem",
-                  // textTransform: "uppercase", // Puedes volver a activarlo si quieres todo en mayúsculas
+                  fontSize: "0.55rem",
+                  fontWeight: 300,
+                  textTransform: "uppercase",
                   color: "white",
-                  backgroundColor: fuchsiaColor,
-                  padding: "2px 6px",
-                  borderRadius: "4px",
-                  mt: "4px",
+                  mt: "-5px",
                   lineHeight: 1,
-                  letterSpacing: "1.29615em", // Ajusta el espaciado aquí
+                  letterSpacing: "0.55em",
+                  fontFamily: "'Roboto', 'Arial', sans-serif",
                 }}
               >
                 Engineering
-              </Box>
+              </Typography>
             </Box>
           </Box>
+
+
+
+
+
 
           <Typography
             variant="h6"
