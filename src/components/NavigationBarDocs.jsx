@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import {
-  TextField, AppBar, Box, Toolbar, List, ListItem, ListItemText, Typography,
-  Divider, InputAdornment, MenuItem, Select, FormControl, InputLabel, Grid, ListItemIcon
+  TextField, AppBar, Box, Toolbar, Typography,
+  InputAdornment, MenuItem, Select, FormControl, InputLabel, Grid, Card
 } from '@mui/material';
 
 import Catalogo from './Catalogo.json';
@@ -12,7 +12,7 @@ import { auth } from './firebase/firebaseConfig';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { alpha, useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import * as XLSX from 'xlsx';
 import InboxIcon from '@mui/icons-material/Inbox';
 
@@ -195,56 +195,108 @@ const Fichas = () => {
       </AppBar>
 
       <Box sx={{ padding: 2 }}>
-        <List>
+        <Grid container spacing={2}>
           {filteredData.map((item) => {
             const colorBase = stringToColor(item.grupo, "22");
             const hoverColor = stringToColor(item.grupo, "44");
 
             return (
-              <React.Fragment key={item.codigo}>
-                <ListItem
-                  button
+              <Grid item xs={12} sm={6} md={4} lg={3} key={item.codigo}>
+                <Box
+                  component="div"
                   onClick={() => handleFichaClick(item)}
                   sx={{
                     cursor: 'pointer',
-                    bgcolor: colorBase,
-                    "&:hover": {
-                      bgcolor: hoverColor
+                    transition: '0.3s',
+                    '&:hover .hoverCard': {
+                      bgcolor: hoverColor,
                     },
-                    alignItems: 'center',
-                    textAlign: 'center',
                   }}
                 >
-                  <ListItemIcon sx={{ minWidth: 40, justifyContent: 'center' }}>
-                    <InboxIcon />
-                  </ListItemIcon>
-                  <ListItemText
-                    primary={
-                      <Typography
-                        variant="body1"
-                        component="div"
-                        sx={{ textAlign: 'center', width: '100%' }}
+                  <Box
+                    component="div"
+                    onClick={() => handleFichaClick(item)}
+                    sx={{
+                      cursor: 'pointer',
+                      transition: '0.3s',
+                      height: '100%',
+                      '&:hover .hoverCard': {
+                        bgcolor: hoverColor,
+                        transform: 'translateY(-4px)',
+                        boxShadow: 6,
+                      },
+                    }}
+                  >
+                    <Card
+                      className="hoverCard"
+                      sx={{
+                        height: '100%',
+                        bgcolor: colorBase,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        textAlign: 'center',
+                        padding: 1.5,
+                        borderRadius: 3,
+                        boxShadow: 3,
+                        overflow: 'hidden',
+                        transition: 'all 0.3s ease',
+                      }}
+                      elevation={4}
+                    >
+                      {/* Contenedor de imagen compacto */}
+                      <Box
+                        sx={{
+                          width: '100%',
+                          height: 70,
+                          borderRadius: 2,
+                          overflow: 'hidden',
+                          position: 'relative',
+                          mb: 1,
+                          '&:hover .image-zoom': {
+                            transform: 'scale(1.1)',
+                          }
+                        }}
                       >
-                        {item.codigo.split(" ").slice(1).join(" ")}
-                      </Typography>
-                    }
-                    secondary={
-                      <Typography
-                        variant="body2"
-                        component="div"
-                        color="text.secondary"
-                        sx={{ textAlign: 'center', width: '100%', mt: 0.5 }}
-                      >
-                        {`${item.codigo.split(" ")[0]} / ${item.grupo.replaceAll('_', ' ')} / ${item.sector.replaceAll('_', ' ')}`}
-                      </Typography>
-                    }
-                  />
-                </ListItem>
-                <Divider />
-              </React.Fragment>
+                        <Box
+                          component="img"
+                          className="image-zoom"
+                          src={`/img/${item.grupo}.jpeg`}
+                          onError={(e) => {
+                            e.target.onerror = null;
+                            e.target.src = "/img/default.jpeg";
+                            e.target.style.objectFit = 'contain';
+                          }}
+                          alt={item.grupo}
+                          sx={{
+                            width: '100%',
+                            height: '100%',
+                            objectFit: 'cover',
+                            transition: 'transform 0.5s ease',
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                          }}
+                        />
+                      </Box>
+
+                      {/* Contenido de texto compacto */}
+                      <Box sx={{ px: 1, width: '100%' }}>
+                        <Typography variant="h6" sx={{ fontWeight: 500, lineHeight: 1.2, mb: 0.5 }}>
+                          {item.codigo.split(" ").slice(1).join(" ")}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.1, fontSize: '0.8rem' }}>
+                          {`${item.codigo.split(" ")[0]} / ${item.grupo.replaceAll('_', ' ')} / ${item.sector.replaceAll('_', ' ')}`}
+                        </Typography>
+                      </Box>
+                    </Card>
+                  </Box>
+                </Box>
+              </Grid>
             );
           })}
-        </List>
+        </Grid>
       </Box>
 
       <ScrollToTop />
@@ -254,4 +306,3 @@ const Fichas = () => {
 };
 
 export default Fichas;
-

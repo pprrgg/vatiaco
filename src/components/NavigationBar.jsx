@@ -20,6 +20,7 @@ import { Link } from 'react-router-dom';
 import DocumentIcon from '@mui/icons-material/Description';
 import ContactMailIcon from '@mui/icons-material/ContactMail';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
+import SearchIcon from '@mui/icons-material/Search';
 
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 const primaryColor = "#000000"; // Color negro definido como variable
@@ -32,25 +33,26 @@ const settings = [
 function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate, handleDownloadPdf }) {
 
     const pages = [
-        {
-            name: 'Documentos',
-            path: '/Docs',
-            icon: <DocumentIcon />,
-            color: primaryColor,
-            onClick: () => handleNavigation('/Docs')
-        },
+
         {
             name: 'Servicios',
             path: '/Servicios',
             icon: <MiscellaneousServicesIcon />,
             color: primaryColor,
             onClick: () => handleNavigation('/Servicios')
-        },        {
+        }, {
             name: 'Ayuda',
             path: '/ayuda',
             icon: <HelpOutlineIcon />,
             color: primaryColor,
             onClick: () => handleNavigation('/ayuda')
+        },
+        {
+            name: 'Documentos',
+            path: '/Docs',
+            icon: <SearchIcon />,
+            color: primaryColor,
+            onClick: () => handleNavigation('/Docs')
         },
         {
             name: 'Contacto',
@@ -109,56 +111,56 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                <Typography
-  variant="h6"
-  noWrap
-  component="a"
-  href="/"
-  sx={{
-    mr: 2,
-    display: { xs: "none", md: "flex" },
-    fontFamily: "monospace",
-    fontWeight: 700,
-    letterSpacing: ".3rem",
-    color: fuchsiaColor,
-    textDecoration: "none",
-  }}
->
-  <span
-    style={{
-      border: `2px solid ${fuchsiaColor}`,
-      padding: "1px 1px",
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-    }}
-  >
-    <span
-      style={{
-        fontFamily: "'Cinzel', serif", // Asegúrate de haber importado esta fuente
-        textTransform: 'uppercase',
-        fontSize: '1.2rem',
-        lineHeight: .5,
-      }}
-    >
-      Vatiaco
-    </span>
-    <span
-      style={{
-        fontSize: '0.5rem',
-        textTransform: 'uppercase',
-        color: "white",
-        backgroundColor: fuchsiaColor,
-        padding: "1px 4px",
-        borderRadius: "4px",
-        marginTop: "2px",
-        lineHeight: 1,
-      }}
-    >
-      Engineering
-    </span>
-  </span>
-</Typography>
+                    <Typography
+                        variant="h6"
+                        noWrap
+                        component="a"
+                        href="/"
+                        sx={{
+                            mr: 2,
+                            display: { xs: "none", md: "flex" },
+                            fontFamily: "monospace",
+                            fontWeight: 700,
+                            letterSpacing: ".3rem",
+                            color: fuchsiaColor,
+                            textDecoration: "none",
+                        }}
+                    >
+                        <span
+                            style={{
+                                border: `2px solid ${fuchsiaColor}`,
+                                padding: "1px 1px",
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'flex-start',
+                            }}
+                        >
+                            <span
+                                style={{
+                                    fontFamily: "'Cinzel', serif", // Asegúrate de haber importado esta fuente
+                                    textTransform: 'uppercase',
+                                    fontSize: '1.2rem',
+                                    lineHeight: .5,
+                                }}
+                            >
+                                Vatiaco
+                            </span>
+                            <span
+                                style={{
+                                    fontSize: '0.5rem',
+                                    textTransform: 'uppercase',
+                                    color: "white",
+                                    backgroundColor: fuchsiaColor,
+                                    padding: "1px 4px",
+                                    borderRadius: "4px",
+                                    marginTop: "2px",
+                                    lineHeight: 1,
+                                }}
+                            >
+                                Engineering
+                            </span>
+                        </span>
+                    </Typography>
 
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -189,58 +191,58 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
                             ))}
                         </Menu>
                     </Box>
- 
+
                     <Typography
-  variant="h6"
-  noWrap
-  component="a"
-  href="/"
-  sx={{
-    mr: 2,
-    display: { xs: 'flex', md: 'none' },
-    flexGrow: 1,
-    fontFamily: 'monospace',
-    fontWeight: 700,
-    letterSpacing: '.3rem',
-    color: fuchsiaColor,
-    textDecoration: 'none',
-  }}
->
-  <span
-    style={{
-      border: `2px solid ${fuchsiaColor}`,
-      padding: "1px 1px",
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'flex-start',
-    }}
-  >
-    <span
-      style={{
-        fontFamily: "'Cinzel', serif",
-        textTransform: 'uppercase',
-        fontSize: '1.2rem',
-        lineHeight: .5,
-      }}
-    >
-      Vatiaco
-    </span>
-    <span
-      style={{
-        fontSize: '0.5rem',
-        textTransform: 'uppercase',
-        color: "white",
-        backgroundColor: fuchsiaColor,
-        padding: "1px 4px",
-        borderRadius: "4px",
-        marginTop: "2px",
-        lineHeight: 1,
-      }}
-    >
-      Engineering
-    </span>
-  </span>
-</Typography>
+                        variant="h6"
+                        noWrap
+                        component="a"
+                        href="/"
+                        sx={{
+                            mr: 2,
+                            display: { xs: 'flex', md: 'none' },
+                            flexGrow: 1,
+                            fontFamily: 'monospace',
+                            fontWeight: 700,
+                            letterSpacing: '.3rem',
+                            color: fuchsiaColor,
+                            textDecoration: 'none',
+                        }}
+                    >
+                        <span
+                            style={{
+                                border: `2px solid ${fuchsiaColor}`,
+                                padding: "1px 1px",
+                                display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'flex-start',
+                            }}
+                        >
+                            <span
+                                style={{
+                                    fontFamily: "'Cinzel', serif",
+                                    textTransform: 'uppercase',
+                                    fontSize: '1.2rem',
+                                    lineHeight: .5,
+                                }}
+                            >
+                                Vatiaco
+                            </span>
+                            <span
+                                style={{
+                                    fontSize: '0.5rem',
+                                    textTransform: 'uppercase',
+                                    color: "white",
+                                    backgroundColor: fuchsiaColor,
+                                    padding: "1px 4px",
+                                    borderRadius: "4px",
+                                    marginTop: "2px",
+                                    lineHeight: 1,
+                                }}
+                            >
+                                Engineering
+                            </span>
+                        </span>
+                    </Typography>
 
 
 
@@ -300,7 +302,7 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
                             </>
                         ) : (
                             <IconButton component={Link} to="/login" sx={{ color: primaryColor }}>
-                                < PersonOutlineIcon/>
+                                < PersonOutlineIcon />
                             </IconButton>
                         )}
                     </Box>

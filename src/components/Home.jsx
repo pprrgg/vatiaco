@@ -402,7 +402,7 @@ const stringToColor = (str, alpha = "99") => {
           {card.image ? (
             <CardMedia
               component="img"
-              image={card.image}
+              image={`/img/${card.group}.jpeg`}
               alt={card.title_es}
               sx={{
                 width: "100%",
