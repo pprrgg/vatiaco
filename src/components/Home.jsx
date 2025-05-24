@@ -40,21 +40,21 @@ const fuchsiaColor = "#D100D1"; // Código de color fucsia
 
 const HomePage = () => {
 
-// Función para generar color desde string (la defines fuera del componente)
-const stringToColor = (str, alpha = "99") => {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = str.charCodeAt(i) + ((hash << 5) - hash);
-  }
+  // Función para generar color desde string (la defines fuera del componente)
+  const stringToColor = (str, alpha = "99") => {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = str.charCodeAt(i) + ((hash << 5) - hash);
+    }
 
-  let color = "#";
-  for (let i = 0; i < 3; i++) {
-    const value = (hash >> (i * 8)) & 0xff;
-    color += (`00${value.toString(16)}`).slice(-2);
-  }
+    let color = "#";
+    for (let i = 0; i < 3; i++) {
+      const value = (hash >> (i * 8)) & 0xff;
+      color += (`00${value.toString(16)}`).slice(-2);
+    }
 
-  return color + alpha;
-};
+    return color + alpha;
+  };
 
   const navigate = useNavigate();
 
@@ -335,108 +335,115 @@ const stringToColor = (str, alpha = "99") => {
           }}
         >
 
-<Slider {...carouselSettings}>
-  {cardsData.map((card) => (
-    <div key={card.id}>
-<Box
-  sx={{
-    display: "flex",
-    flexDirection: { xs: "column", md: "row" },
-    alignItems: "center",
-    height: { xs: "auto", md: "400px" },
-    border: "1px solid",
-    borderColor: primaryColor,
-    borderRadius: "8px",
-    overflow: "hidden",
-    backgroundColor: stringToColor(card.group, "cc"), // color más intenso, sin hover
-    color: "white",
-  }}
->
-        {/* contenido dentro del Box */}
-        {/* Texto y botón */}
-        <Box
-          sx={{
-            flex: 1,
-            padding: { xs: "20px", md: "20px 40px" },
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "flex-start",
-            textAlign: "left",
-            color: "white",
-            width: "100%",
-          }}
-        >
-          <Typography variant="h4" sx={{ fontWeight: "bold", mb: 1 }}>
-            {card.title_es}
-          </Typography>
-          <Typography variant="subtitle1" sx={{ fontStyle: "italic", mb: 1, opacity: 0.7 }}>
-            {card.title_en}
-          </Typography>
-          <Typography variant="body1" sx={{ mb: 2 }}>
-            {card.description_es}
-          </Typography>
-          <Typography variant="body2" sx={{ fontStyle: "italic", mb: 3, opacity: 0.7 }}>
-            {card.description_en}
-          </Typography>
-          <Button
-            variant="contained"
-            color="secondary"
-            onClick={() =>
-              handleButtonClick(card.group, card.sector, card.searchtext, card.link)
-            }
-          >
-            Ver más / See more
-          </Button>
-        </Box>
+          <Slider {...carouselSettings}>
+            {cardsData.map((card) => (
+              <div key={card.id}>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: { xs: "column", md: "row" },
+                    alignItems: "center",
+                    height: { xs: "auto", md: "400px" },
+                    border: "1px solid",
+                    borderColor: primaryColor,
+                    borderRadius: "8px",
+                    overflow: "hidden",
+                    backgroundColor: stringToColor(card.group, "22"), // Color según group con transparencia
+                    color: "white", // para que el texto se vea bien
+                    transition: "background-color 0.3s ease",
+                    "&:hover": {
+                      backgroundColor: stringToColor(card.group, "44"), // fondo más visible en hover
+                    },
+                  }}
+                >
+                  {/* contenido dentro del Box */}
+                  {/* Texto y botón */}
+                  <Box
+                    sx={{
+                      flex: 1,
+                      padding: { xs: "20px", md: "20px 40px" },
+                      display: "flex",
+                      flexDirection: "column",
+                      justifyContent: "center",
+                      alignItems: "flex-start",
+                      textAlign: "left",
+                      color: "black",
+                      width: "100%",
+                    }}
+                  >
+                    <Typography variant="h4" sx={{ fontWeight: "bold", mb: 1 }}>
+                      {card.title_es}
+                    </Typography>
+                    <Typography variant="subtitle1" sx={{ fontStyle: "italic", mb: 1, opacity: 0.7 }}>
+                      {card.title_en}
+                    </Typography>
+                    <Typography variant="body1" sx={{ mb: 2 }}>
+                      {card.description_es}
+                    </Typography>
+                    <Typography variant="body2" sx={{ fontStyle: "italic", mb: 3, opacity: 0.7 }}>
+                      {card.description_en}
+                    </Typography>
+                    <Button
+                      variant="contained"
+                      color="secondary"
+                      onClick={() =>
+                        handleButtonClick(card.group, card.sector, card.searchtext, card.link)
+                      }
+                    >
+                      Ver más / See more
+                    </Button>
+                  </Box>
 
-        {/* Imagen */}
-        <Box
-          sx={{
-            flex: 1,
-            width: "100%",
-            height: { xs: "200px", md: "100%" },
-            backgroundColor: "transparent",
-          }}
-        >
-          {card.image ? (
-            <CardMedia
-              component="img"
-              image={`/img/${card.group}.jpeg`}
-              alt={card.title_es}
-              sx={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                clipPath: "inset(10% round 0px)",
-              }}
-            />
-          ) : (
-            <Box
-              sx={{
-                width: "100%",
-                height: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {card.icon}
-            </Box>
-          )}
-        </Box>
-      </Box>
-    </div>
-  ))}
-</Slider>
+                  {/* Imagen */}
+                  <Box
+                    sx={{
+                      flex: 1,
+                      width: "100%",
+                      height: { xs: "200px", md: "100%" },
+                      backgroundColor: "transparent",
+                    }}
+                  >
+                    {card.image ? (
+                      <CardMedia
+                        component="img"
+                        src={`/img/${card.group}.jpeg`}
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = "/img/default.jpeg";
+                          e.target.style.objectFit = 'contain';
+                        }}
+                        alt={card.grupo}
+                        sx={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          clipPath: "inset(10% round 0px)",
+                        }}
+                      />
+                    ) : (
+                      <Box
+                        sx={{
+                          width: "100%",
+                          height: "100%",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        {card.icon}
+                      </Box>
+                    )}
+                  </Box>
+                </Box>
+              </div>
+            ))}
+          </Slider>
 
 
         </Container>
       </div>
 
       <div id="inicio">
-
-
         <Container
           sx={{
             py: 6,
@@ -522,7 +529,6 @@ const stringToColor = (str, alpha = "99") => {
       </div>
 
       <div id="servicios">
-        {/* Cards principales con iconos grandes */}
         <Container
           sx={{
             py: 6,
@@ -531,57 +537,74 @@ const stringToColor = (str, alpha = "99") => {
             borderRadius: 2,
             position: "relative",
           }}
-        >        <Grid container spacing={4}>
-            {cardsData.map((card) => (
-              <Grid item key={card.id} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{
-                    position: "relative",
-                    height: "auto",       // altura flexible según contenido
-                    minHeight: 320,       // para dar algo de estructura inicial
-                    border: "1px solid",
-                    borderColor: primaryColor,
-                    borderRadius: "8px",
-                    overflow: "hidden",
-                    transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
-                    "&:hover": {
-                      transform: "scale(1.05)",
-                      boxShadow: 6,
-                    },
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    py: 2,
-                    px: 2,
-                    textAlign: "center",
-                    boxSizing: "border-box",
-                  }}
-                >
-                  {card.icon && <div style={{ marginBottom: 16 }}>{card.icon}</div>}
-                  <CardContent sx={{ flexGrow: 1 }}>
-                    <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
-                      {card.title_es}
-                    </Typography>
-                    <Typography variant="subtitle2" sx={{ fontStyle: "italic", color: "text.secondary", mb: 2 }}>
-                      {card.title_en}
-                    </Typography>
-                    <Typography variant="body2" sx={{ mb: 2 }}>
-                      {card.description_es}
-                    </Typography>
-                    <Typography variant="caption" sx={{ fontStyle: "italic", color: "text.secondary" }}>
-                      {card.description_en}
-                    </Typography>
-                  </CardContent>
-                  <Button variant="contained" color="secondary"
-                    onClick={() => handleButtonClick(card.group, card.sector, card.searchtext, card.link)}
+        >
+          <Grid container spacing={4}>
+            {cardsData.map((card) => {
+              return (
+                <Grid item key={card.id} xs={12} sm={6} md={4}>
+                  <Card
+                    onClick={() =>
+                      handleButtonClick(
+                        card.group,
+                        card.sector,
+                        card.searchtext,
+                        card.link
+                      )
+                    }
+                    sx={{
+                      position: "relative",
+                      height: "auto",
+                      minHeight: 320,
+                      border: "1px solid",
+                      borderColor: primaryColor,
+                      borderRadius: "8px",
+                      overflow: "hidden",
+                      transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      py: 2,
+                      px: 2,
+                      textAlign: "center",
+                      boxSizing: "border-box",
+                      backgroundColor: stringToColor(card.group, "22"),
+                      color: "black",
+                      cursor: "pointer",
+                      "&:hover": {
+                        transform: "scale(1.05)",
+                        boxShadow: 6,
+                        backgroundColor: stringToColor(card.group, "44"),
+                      },
+                    }}
                   >
-                    Ver más / See more
-                  </Button>
-                </Card>
-              </Grid>
-            ))}
+                    {card.icon && <div style={{ marginBottom: 16 }}>{card.icon}</div>}
+                    <CardContent sx={{ flexGrow: 1 }}>
+                      <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
+                        {card.title_es}
+                      </Typography>
+                      <Typography
+                        variant="subtitle2"
+                        sx={{ fontStyle: "italic", color: "text.secondary", mb: 2 }}
+                      >
+                        {card.title_en}
+                      </Typography>
+                      <Typography variant="body2" sx={{ mb: 2 }}>
+                        {card.description_es}
+                      </Typography>
+                      <Typography
+                        variant="caption"
+                        sx={{ fontStyle: "italic", color: "text.secondary" }}
+                      >
+                        {card.description_en}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </Grid>
+              );
+            })}
           </Grid>
         </Container>
+
       </div>
 
       <div id="faq">
