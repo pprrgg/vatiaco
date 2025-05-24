@@ -35,7 +35,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTheme } from "@mui/material/styles";
 import { Box } from "@mui/material";
-const primaryColor = "#000000"; // Color negro definido como variable
 const fuchsiaColor = "#D100D1"; // Código de color fucsia
 
 const HomePage = () => {
@@ -504,11 +503,6 @@ const HomePage = () => {
           </Box>
 
 
-
-
-
-
-
           <Typography
             variant="h6"
             color="textPrimary"
@@ -545,6 +539,14 @@ const HomePage = () => {
             position: "relative",
           }}
         >
+
+          <Typography
+            variant="h3"
+            component="h1"
+            sx={{ fontWeight: "bold", mb: 1, color: primaryColor }}
+          >
+            Servicios / Services
+          </Typography>
           <Grid container spacing={4}>
             {cardsData.map((card) => {
               return (

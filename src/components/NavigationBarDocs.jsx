@@ -17,6 +17,7 @@ import { useTheme } from '@mui/material/styles';
 import * as XLSX from 'xlsx';
 import InboxIcon from '@mui/icons-material/Inbox';
 const fuchsiaColor = "#D100D1"; // Código de color fucsia
+const primaryColor = "#1976d2";
 
 // Función para generar color desde string
 const stringToColor = (str, alpha = "22") => {
@@ -122,6 +123,21 @@ const Fichas = () => {
     navigate(`/doc`);
   };
 
+
+  const groupedData = useMemo(() => {
+    const grouped = {};
+    filteredData.forEach(item => {
+      if (!grouped[item.grupo]) {
+        grouped[item.grupo] = {};
+      }
+      if (!grouped[item.grupo][item.sector]) {
+        grouped[item.grupo][item.sector] = [];
+      }
+      grouped[item.grupo][item.sector].push(item);
+    });
+    return grouped;
+  }, [filteredData]);
+
   return (
     <>
 
@@ -213,86 +229,48 @@ const Fichas = () => {
       </div>
 
       <div id="inicio">
-        <Container
-          sx={{
-            py: 6,
-            textAlign: "center",
-            backgroundColor: "#f5f7fa",
-            borderRadius: 2,
-            position: "relative",
-          }}
-        >
-          <Box
+
+        {1 && (<div id="inicio">
+          <Container
             sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              mb: 2,
+              py: 6,
+              textAlign: "center",
+              backgroundColor: "#f5f7fa",
+              borderRadius: 2,
+              position: "relative",
             }}
           >
-            <Box
-              sx={{
-                border: `2px solid ${fuchsiaColor}`,
-                padding: "4px 8px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
+            <Typography
+              variant="h3"
+              component="h1"
+              sx={{ fontWeight: "bold", mb: 1, color: primaryColor }}
             >
-              <Typography
-                variant="h4"
-                component="div"
-                sx={{
-                  fontFamily: "'Cinzel', serif",
-                  textTransform: "uppercase",
-                  color: fuchsiaColor,
-                  lineHeight: 1.2,
-                  letterSpacing: "0.52em", // Ajusta el valor según tu gusto
-                }}
-              >
-                Vatiaco
-              </Typography>
-              <Box
-                component="span"
-                sx={{
-                  fontSize: "0.8rem",
-                  // textTransform: "uppercase", // Puedes volver a activarlo si quieres todo en mayúsculas
-                  color: "white",
-                  backgroundColor: fuchsiaColor,
-                  padding: "2px 6px",
-                  borderRadius: "4px",
-                  mt: "4px",
-                  lineHeight: 1,
-                  letterSpacing: "1.29615em", // Ajusta el espaciado aquí
-                }}
-              >
-                Engineering
-              </Box>
-            </Box>
-          </Box>
+              Informes personalizables / Customizable reports
+            </Typography>
+            <Typography
+              variant="h6"
+              color="textPrimary"
+              sx={{ fontWeight: 500, mb: 0.5 }}
+            >
+              <Box component="span" sx={{ fontWeight: 900 }}>
+                Soluciones energéticas
+              </Box>{" "}
+              que ahorran hoy y transforman el mañana.
+            </Typography>
 
-          <Typography
-            variant="h6"
-            color="textPrimary"
-            sx={{ fontWeight: 500, mb: 0.5 }}
-          >
-            <Box component="span" sx={{ fontWeight: 900 }}>
-              Soluciones energéticas
-            </Box>{" "}
-            que ahorran hoy y transforman el mañana.
-          </Typography>
-
-          <Typography
-            variant="h6"
-            color="textSecondary"
-            sx={{ fontWeight: 400, fontStyle: "italic" }}
-          >
-            <Box component="span" sx={{ fontWeight: 600 }}>
-              Energy solutions
-            </Box>{" "}
-            that save today and transform tomorrow.
-          </Typography>
-        </Container>
+            <Typography
+              variant="h6"
+              color="textSecondary"
+              sx={{ fontWeight: 400, fontStyle: "italic" }}
+            >
+              <Box component="span" sx={{ fontWeight: 600 }}>
+                Energy solutions
+              </Box>{" "}
+              that save today and transform tomorrow.
+            </Typography>
+          </Container>
+        </div>
+        )}
 
 
       </div>
@@ -307,108 +285,108 @@ const Fichas = () => {
           }}
         >
           <Box sx={{ padding: 2 }}>
-            <Grid container spacing={2}>
-              {filteredData.map((item) => {
-                const colorBase = stringToColor(item.grupo, "22");
-                const hoverColor = stringToColor(item.grupo, "44");
+            {Object.entries(groupedData).map(([grupo, sectores]) => (
+              <Box key={grupo} sx={{ mb: 6 }}>
+                <Typography variant="h5" sx={{ fontWeight: 'bold', mb: 2, color: primaryColor }}>
+                  {grupo.replaceAll('_', ' ')}
+                </Typography>
 
-                return (
-                  <Grid item xs={12} sm={6} md={4} lg={3} key={item.codigo}>
-                    <Box
-                      component="div"
-                      onClick={() => handleFichaClick(item)}
-                      sx={{
-                        cursor: 'pointer',
-                        transition: '0.3s',
-                        '&:hover .hoverCard': {
-                          bgcolor: hoverColor,
-                        },
-                      }}
-                    >
-                      <Box
-                        component="div"
-                        onClick={() => handleFichaClick(item)}
-                        sx={{
-                          cursor: 'pointer',
-                          transition: '0.3s',
-                          height: '100%',
-                          '&:hover .hoverCard': {
-                            bgcolor: hoverColor,
-                            transform: 'translateY(-4px)',
-                            boxShadow: 6,
-                          },
-                        }}
-                      >
-                        <Card
-                          className="hoverCard"
-                          sx={{
-                            height: '100%',
-                            bgcolor: colorBase,
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'space-between',
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            padding: 1.5,
-                            borderRadius: 3,
-                            boxShadow: 3,
-                            overflow: 'hidden',
-                            transition: 'all 0.3s ease',
-                          }}
-                          elevation={4}
-                        >
-                          {/* Contenedor de imagen compacto */}
-                          <Box
-                            sx={{
-                              width: '100%',
-                              height: 70,
-                              borderRadius: 2,
-                              overflow: 'hidden',
-                              position: 'relative',
-                              mb: 1,
-                              '&:hover .image-zoom': {
-                                transform: 'scale(1.1)',
-                              }
-                            }}
-                          >
+                {Object.entries(sectores).map(([sector, fichas]) => (
+                  <Box key={sector} sx={{ mb: 4, pl: 2 }}>
+                    <Typography variant="h6" sx={{ fontWeight: 600, mb: 2, color: theme.palette.text.secondary }}>
+                      {sector.replaceAll('_', ' ')}
+                    </Typography>
+
+                    <Grid container spacing={2}>
+                      {fichas.map((item) => {
+                        const colorBase = stringToColor(item.grupo, "22");
+                        const hoverColor = stringToColor(item.grupo, "44");
+
+                        return (
+                          <Grid item xs={12} sm={6} md={4} lg={3} key={item.codigo}>
                             <Box
-                              component="img"
-                              className="image-zoom"
-                              src={`/img/${item.grupo}.jpeg`}
-                              onError={(e) => {
-                                e.target.onerror = null;
-                                e.target.src = "/img/default.jpeg";
-                                e.target.style.objectFit = 'contain';
-                              }}
-                              alt={item.grupo}
+                              component="div"
+                              onClick={() => handleFichaClick(item)}
                               sx={{
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'cover',
-                                transition: 'transform 0.5s ease',
-                                position: 'absolute',
-                                top: 0,
-                                left: 0,
+                                cursor: 'pointer',
+                                transition: '0.3s',
+                                '&:hover .hoverCard': {
+                                  bgcolor: hoverColor,
+                                },
                               }}
-                            />
-                          </Box>
+                            >
+                              <Card
+                                className="hoverCard"
+                                sx={{
+                                  height: '100%',
+                                  bgcolor: colorBase,
+                                  display: 'flex',
+                                  flexDirection: 'column',
+                                  justifyContent: 'space-between',
+                                  alignItems: 'center',
+                                  textAlign: 'center',
+                                  padding: 1.5,
+                                  borderRadius: 3,
+                                  boxShadow: 3,
+                                  overflow: 'hidden',
+                                  transition: 'all 0.3s ease',
+                                }}
+                                elevation={4}
+                              >
+                                <Box
+                                  sx={{
+                                    width: '100%',
+                                    height: 70,
+                                    borderRadius: 2,
+                                    overflow: 'hidden',
+                                    position: 'relative',
+                                    mb: 1,
+                                    '&:hover .image-zoom': {
+                                      transform: 'scale(1.1)',
+                                    }
+                                  }}
+                                >
+                                  <Box
+                                    component="img"
+                                    className="image-zoom"
+                                    src={`/img/${item.grupo}.jpeg`}
+                                    onError={(e) => {
+                                      e.target.onerror = null;
+                                      e.target.src = "/img/default.jpeg";
+                                      e.target.style.objectFit = 'contain';
+                                    }}
+                                    alt={item.grupo}
+                                    sx={{
+                                      width: '100%',
+                                      height: '100%',
+                                      objectFit: 'cover',
+                                      transition: 'transform 0.5s ease',
+                                      position: 'absolute',
+                                      top: 0,
+                                      left: 0,
+                                    }}
+                                  />
+                                </Box>
 
-                          {/* Contenido de texto compacto */}
-                          <Box sx={{ px: 1, width: '100%' }}>
-                            <Typography variant="h6" sx={{ fontWeight: 500, lineHeight: 1.2, mb: 0.5 }}>
-                              {item.codigo.split(" ").slice(1).join(" ")}
-                            </Typography>
-                            <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.1, fontSize: '0.8rem' }}>
-                              {`${item.codigo.split(" ")[0]} / ${item.grupo.replaceAll('_', ' ')} / ${item.sector.replaceAll('_', ' ')}`}
-                            </Typography>
-                          </Box>
-                        </Card>
-                      </Box>
-                    </Box>
-                  </Grid>
-                );
-              })}
-            </Grid>
+                                <Box sx={{ px: 1, width: '100%' }}>
+                                  <Typography variant="h6" sx={{ fontWeight: 500, lineHeight: 1.2, mb: 0.5 }}>
+                                    {item.codigo.split(" ").slice(1).join(" ")}
+                                  </Typography>
+                                  <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.1, fontSize: '0.8rem' }}>
+                                    {`${item.codigo.split(" ")[0]} / ${item.grupo.replaceAll('_', ' ')} / ${item.sector.replaceAll('_', ' ')}`}
+                                  </Typography>
+                                </Box>
+                              </Card>
+                            </Box>
+                          </Grid>
+                        );
+                      })}
+                    </Grid>
+                  </Box>
+                ))}
+              </Box>
+            ))}
+
           </Box>
         </Container>
       </div>

@@ -48,7 +48,7 @@ function ResponsiveAppBar({ filePath, abrirModal, abrirModalx, handleRecalculate
             onClick: () => handleNavigation('/ayuda')
         },
         {
-            name: 'Documentos',
+            name: 'Informes',
             path: '/Docs',
             icon: <SearchIcon />,
             color: primaryColor,
