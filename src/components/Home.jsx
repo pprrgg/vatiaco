@@ -577,7 +577,44 @@ const HomePage = () => {
                       },
                     }}
                   >
-                    {card.icon && <div style={{ marginBottom: 16 }}>{card.icon}</div>}
+                    {/* {card.icon && <div style={{ marginBottom: 16 }}>{card.icon}</div>} */}
+
+                    <Box
+                      sx={{
+                        width: '100%',
+                        height: 180,
+                        borderRadius: 2,
+                        overflow: 'hidden',
+                        position: 'relative',
+                        mb: 2,
+                        '&:hover .image-zoom': {
+                          transform: 'scale(1.1)',
+                        },
+                      }}
+                    >
+                      <Box
+                        component="img"
+                        className="image-zoom"
+                        src={`/img/${card.group}.jpeg`}
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = "/img/default.jpeg";
+                          e.target.style.objectFit = 'contain';
+                        }}
+                        alt={card.group}
+                        sx={{
+                          width: '100%',
+                          height: '100%',
+                          objectFit: 'cover',
+                          transition: 'transform 0.5s ease',
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                        }}
+                      />
+                    </Box>
+
+
                     <CardContent sx={{ flexGrow: 1 }}>
                       <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
                         {card.title_es}
