@@ -417,7 +417,7 @@ const HomePage = () => {
                           width: "100%",
                           height: "100%",
                           objectFit: "cover",
-                          clipPath: "inset(10% round 0px)",
+                          clipPath: "inset(3% round 0px)",
                         }}
                       />
                     ) : (
@@ -582,7 +582,7 @@ const HomePage = () => {
                     <Box
                       sx={{
                         width: '100%',
-                        height: 180,
+                        height: 200,
                         borderRadius: 2,
                         overflow: 'hidden',
                         position: 'relative',
