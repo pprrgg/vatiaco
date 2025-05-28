@@ -55,6 +55,16 @@ const Fichas = () => {
     return [''].concat(groups);
   }, []);
 
+  const normalize = (str) =>
+    str
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "") // elimina acentos
+      .replace(/_/g, ' ') // reemplaza guiones bajos por espacios
+      .replace(/\s+/g, ' ') // colapsa múltiples espacios
+      .trim();
+
+
   useEffect(() => {
     setData(Catalogo);
   }, []);
@@ -90,18 +100,22 @@ const Fichas = () => {
       : [];
   }, [selectedGroup]);
 
+  const normalizedSearch = normalize(searchText);
+
   const filteredData = useMemo(() => {
     return Catalogo.filter(item =>
-      !item.codigo.includes('jlkjldsakjflkjlkjlkjlkj987978')
-    ).filter(item =>
-      (!selectedGroup || item.grupo === selectedGroup) &&
-      (!selectedSector || item.sector === selectedSector) &&
-      (!searchText ||
-        item.codigo.toLowerCase().includes(searchText) ||
-        item.sector.toLowerCase().includes(searchText) ||
-        item.grupo.toLowerCase().includes(searchText)
-      )
-    );
+      !item.cod.includes('jlkjldsakjflkjlkjlkjlkj987978')
+    ).filter(item => {
+      const cod = normalize(item.cod);
+      const sector = normalize(item.sector);
+      const grupo = normalize(item.grupo);
+  
+      return (
+        (!selectedGroup || item.grupo === selectedGroup) &&
+        (!selectedSector || item.sector === selectedSector) &&
+        (!searchText || cod.includes(normalizedSearch) || sector.includes(normalizedSearch) || grupo.includes(normalizedSearch))
+      );
+    });
   }, [Catalogo, searchText, selectedGroup, selectedSector]);
 
   const loadDataFromExcel = async (filePath) => {
@@ -309,7 +323,7 @@ const Fichas = () => {
                           const hoverColor = stringToColor(item.grupo, "44");
 
                           return (
-                            <Grid item xs={12} sm={6} md={4} lg={3} key={item.codigo}>
+                            <Grid item xs={12} sm={6} md={4} lg={3} key={item.cod}>
                               <Box
                                 component="div"
                                 onClick={() => handleFichaClick(item)}
