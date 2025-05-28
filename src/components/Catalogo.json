@@ -1,0 +1,130 @@
+[
+    {
+        "categoria": "libre",
+        "codigo": "GMEIN000 GESTION Y MONITOREO ENERGÉTICO",
+        "sector": "Intro",
+        "grupo": "Gestion_y_monitoreo_energético",
+        "cod": "Gmein000GestionYMonitoreoEnergético",
+        "co": "GMEIN000G"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "CCEEIN000 COMUNIDADES ENERGETICAS",
+        "sector": "Intro",
+        "grupo": "Auditorías_energéticas",
+        "cod": "Cceein000ComunidadesEnergeticas",
+        "co": "CCEEIN000C"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AGR010 PANTALLAS TÉRMICAS EN INVERNADEROS",
+        "sector": "Agrario",
+        "grupo": "Certificados_de_Ahorro_Energético",
+        "cod": "Agr010PantallasTérmicasEnInvernaderos",
+        "co": "AGR010P"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AGR010 ANEXO III DECLARACIÓN RESPONSABLE DEL VALOR DEL",
+        "sector": "Agrario",
+        "grupo": "Certificados_de_Ahorro_Energético",
+        "cod": "Agr010AnexoIiiDeclaraciónResponsableDelValorDel",
+        "co": "AGR010A"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AGR020 RECUPERACIÓN DEL CALOR DEL PROCESO DE PREENFRIAMIENTO DE LA LECHE PARA USOS TÉRMICOS EN LA EXPLOTACIÓN GANADERA",
+        "sector": "Agrario",
+        "grupo": "Certificados_de_Ahorro_Energético",
+        "cod": "Agr020RecuperaciónDelCalorDelProcesoDePreenfriamientoDeLaLecheParaUsosTérmicosEnLaExplotaciónGanadera",
+        "co": "AGR020R"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "RVEIN000 RECARGA DE VEHÍCULOS ELÉCTRICOS",
+        "sector": "Intro",
+        "grupo": "Recarga_de_vehículos_eléctricos",
+        "cod": "Rvein000RecargaDeVehículosEléctricos",
+        "co": "RVEIN000R"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE050 CONTRATO DE ENERGÍA INDEXADO AL POOL",
+        "sector": "IndexadoAlPool",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece050ContratoDeEnergíaIndexadoAlPool",
+        "co": "AECE050C"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE040 TRANSFORMADORES DE INTENSIDAD Y POTENCIAS CONTRATADAS",
+        "sector": "Varios",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece040TransformadoresDeIntensidadYPotenciasContratadas",
+        "co": "AECE040T"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE020 OPTIMIZACIÓN POTENCIA SUPERIOR50 KW",
+        "sector": "Facturación_Por_Potencia_Contratada",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece020OptimizaciónPotenciaSuperior50Kw",
+        "co": "AECE020O"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE010 OPTIMIZACIÓN POTENCIAS INFERIOR50 KW ABRIL2025",
+        "sector": "Facturación_Por_Potencia_Contratada",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece010OptimizaciónPotenciasInferior50KwAbril2025",
+        "co": "AECE010O"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE010 OPTIMIZACIÓN POTENCIAS INFERIOR50 KW",
+        "sector": "Facturación_Por_Potencia_Contratada",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece010OptimizaciónPotenciasInferior50Kw",
+        "co": "AECE010O"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "OC000 OPTIMIZACIÓN DE CONTRATOS DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Oc000OptimizaciónDeContratosDeEnergía",
+        "co": "OC000O"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AECE030 FACTURACIÓN POR ENERGÍA REACTIVA",
+        "sector": "Facturación_Por_Energía_Reactiva",
+        "grupo": "Optimización_de_contratos_de_energía",
+        "cod": "Aece030FacturaciónPorEnergíaReactiva",
+        "co": "AECE030F"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
+        "sector": "Intro",
+        "grupo": "Almacenamiento_de_energía",
+        "cod": "Aein000AlmacenamientoDeEnergía",
+        "co": "AEIN000A"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "CCEEIN000 COMUNIDADES ENERGETICAS",
+        "sector": "Intro",
+        "grupo": "Comunidades_energeticas",
+        "cod": "Cceein000ComunidadesEnergeticas",
+        "co": "CCEEIN000C"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "AIN000 AUTOCONSUMO",
+        "sector": "Intro",
+        "grupo": "Autoconsumo",
+        "cod": "Ain000Autoconsumo",
+        "co": "AIN000A"
+    }
+]
