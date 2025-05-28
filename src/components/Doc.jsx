@@ -165,7 +165,7 @@ const PDFRenderer = () => {
     if (!pdfBlob) return;
 
     const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
-    const fileName = `WB_${ep?.cod || 'documento'}.pdf`;
+    const fileName = `Vatiaco_${ep?.cod || 'documento'}.pdf`;
 
     const url = window.URL.createObjectURL(pdfBlob);
     const link = document.createElement("a");
