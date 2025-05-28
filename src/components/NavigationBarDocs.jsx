@@ -19,6 +19,8 @@ import "react-toastify/dist/ReactToastify.css";
 import { useTheme } from '@mui/material/styles';
 import * as XLSX from 'xlsx';
 import InboxIcon from '@mui/icons-material/Inbox';
+import imagenesPorPalabra from './CatalogoImagenes.json';
+
 const fuchsiaColor = "#D100D1"; // Código de color fucsia
 const primaryColor = "#1976d2";
 
@@ -40,6 +42,8 @@ const stringToColor = (str, alpha = "22") => {
   return color + alpha;
 };
 
+// ... (todos los imports permanecen igual)
+
 const Fichas = () => {
   const theme = useTheme();
   const [user] = useAuthState(auth);
@@ -59,40 +63,25 @@ const Fichas = () => {
     str
       .toLowerCase()
       .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "") // elimina acentos
-      .replace(/_/g, ' ') // reemplaza guiones bajos por espacios
-      .replace(/\s+/g, ' ') // colapsa múltiples espacios
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/_/g, ' ')
+      .replace(/\s+/g, ' ')
       .trim();
-
 
   useEffect(() => {
     setData(Catalogo);
   }, []);
 
-  useEffect(() => {
-    sessionStorage.setItem('selectedGroup', selectedGroup);
-  }, [selectedGroup]);
+  useEffect(() => sessionStorage.setItem('selectedGroup', selectedGroup), [selectedGroup]);
+  useEffect(() => sessionStorage.setItem('selectedSector', selectedSector), [selectedSector]);
+  useEffect(() => sessionStorage.setItem('searchText', searchText), [searchText]);
 
-  useEffect(() => {
-    sessionStorage.setItem('selectedSector', selectedSector);
-  }, [selectedSector]);
-
-  useEffect(() => {
-    sessionStorage.setItem('searchText', searchText);
-  }, [searchText]);
-
-  const handleSearchChange = (event) => {
-    setSearchText(event.target.value.toLowerCase());
-  };
-
+  const handleSearchChange = (event) => setSearchText(event.target.value.toLowerCase());
   const handleGroupChange = (event) => {
     setSelectedGroup(event.target.value);
     setSelectedSector('');
   };
-
-  const handleSectorChange = (event) => {
-    setSelectedSector(event.target.value);
-  };
+  const handleSectorChange = (event) => setSelectedSector(event.target.value);
 
   const availableSectors = useMemo(() => {
     return selectedGroup
@@ -109,7 +98,7 @@ const Fichas = () => {
       const cod = normalize(item.cod);
       const sector = normalize(item.sector);
       const grupo = normalize(item.grupo);
-  
+
       return (
         (!selectedGroup || item.grupo === selectedGroup) &&
         (!selectedSector || item.sector === selectedSector) &&
@@ -128,7 +117,6 @@ const Fichas = () => {
         acc[sheetName] = sheet.filter(row => row.some(cell => cell != null && cell !== ""));
         return acc;
       }, {});
-
       sessionStorage.setItem("excelData", JSON.stringify(sheetsData));
       setTempSheets(sheetsData);
     } catch (err) {
@@ -142,35 +130,30 @@ const Fichas = () => {
     navigate(`/doc`);
   };
 
-
   const groupedData = useMemo(() => {
     const grouped = {};
     filteredData.forEach(item => {
-      if (!grouped[item.grupo]) {
-        grouped[item.grupo] = {};
-      }
-      if (!grouped[item.grupo][item.sector]) {
-        grouped[item.grupo][item.sector] = [];
-      }
+      if (!grouped[item.grupo]) grouped[item.grupo] = {};
+      if (!grouped[item.grupo][item.sector]) grouped[item.grupo][item.sector] = [];
       grouped[item.grupo][item.sector].push(item);
     });
     return grouped;
   }, [filteredData]);
 
+  const obtenerImagenPorCod = (cod, grupo) => {
+    const codPalabras = cod.toLowerCase().split(/[\s_]+/); // separa por espacios o guiones bajos
+    for (const palabra of codPalabras) {
+      if (imagenesPorPalabra[palabra]) {
+        return `/img/${imagenesPorPalabra[palabra]}`;
+      }
+    }
+    return `/img/${grupo}.jpeg`;
+  };
+
   return (
     <>
-
       <div id="inicio">
-        <Container
-          sx={{
-            py: 6,
-            textAlign: "center",
-            backgroundColor: "#f5f7fa",
-            borderRadius: 2,
-            position: "relative",
-          }}
-        >
-
+        <Container sx={{ py: 6, textAlign: "center", backgroundColor: "#f5f7fa", borderRadius: 2, position: "relative" }}>
           <AppBar position="static" sx={{ bgcolor: "transparent", color: "black", width: "100%", mt: "55px" }}>
             <Toolbar>
               <Grid container spacing={2} sx={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -183,23 +166,12 @@ const Fichas = () => {
                       label="Grupo"
                       sx={{
                         bgcolor: selectedGroup ? stringToColor(selectedGroup, "22") : 'white',
-                        '&:hover': {
-                          bgcolor: selectedGroup ? stringToColor(selectedGroup, "44") : '#f0f0f0',
-                        }
+                        '&:hover': { bgcolor: selectedGroup ? stringToColor(selectedGroup, "44") : '#f0f0f0' }
                       }}
                     >
                       <MenuItem value="">*</MenuItem>
                       {availableGroups.slice(1).map(group => (
-                        <MenuItem
-                          key={group}
-                          value={group}
-                          sx={{
-                            bgcolor: stringToColor(group, "11"),
-                            '&:hover': {
-                              bgcolor: stringToColor(group, "33"),
-                            }
-                          }}
-                        >
+                        <MenuItem key={group} value={group} sx={{ bgcolor: stringToColor(group, "11"), '&:hover': { bgcolor: stringToColor(group, "33") } }}>
                           {group.replaceAll('_', ' ')}
                         </MenuItem>
                       ))}
@@ -210,11 +182,7 @@ const Fichas = () => {
                 <Grid item xs={12} sm={4}>
                   <FormControl fullWidth disabled={!selectedGroup}>
                     <InputLabel>Subgrupo</InputLabel>
-                    <Select
-                      value={selectedSector}
-                      onChange={handleSectorChange}
-                      label="Subgrupo"
-                    >
+                    <Select value={selectedSector} onChange={handleSectorChange} label="Subgrupo">
                       <MenuItem value="">*</MenuItem>
                       {availableSectors.slice(1).map(sector => (
                         <MenuItem key={sector} value={sector}>{sector.replaceAll('_', ' ')}</MenuItem>
@@ -235,7 +203,7 @@ const Fichas = () => {
                         <InputAdornment position="start">
                           <SearchIcon />
                         </InputAdornment>
-                      ),
+                      )
                     }}
                   />
                 </Grid>
@@ -243,175 +211,118 @@ const Fichas = () => {
             </Toolbar>
           </AppBar>
         </Container>
-
-
       </div>
 
       <div id="inicio">
-        <Container
-          sx={{
-            py: 6,
-            textAlign: "center",
-            backgroundColor: "white",
-            borderRadius: 2,
-            position: "relative",
-          }}
-        >
+        <Container sx={{ py: 6, textAlign: "center", backgroundColor: "white", borderRadius: 2, position: "relative" }}>
           <Box sx={{ padding: 2 }}>
-            {/* 🟢 MODIFICADO: iterar por grupos */}
             {Object.entries(groupedData).map(([grupo, sectores]) => {
-              const groupBgColor = stringToColor(grupo, "0A"); // ← más claro
+              const groupBgColor = stringToColor(grupo, "0A");
 
               return (
-                <Box
-                  key={grupo}
-                  sx={{
-                    mb: 6,
-                    p: 3,
-                    borderRadius: 4,
-                    backgroundColor: groupBgColor,
-                    boxShadow: 3,
-                  }}
-                >
-                  <Typography
-                    variant="h4"
-                    sx={{
-                      fontWeight: 'bold',
-                      mb: 2,
-                      color: primaryColor,
-                      textTransform: 'uppercase',
-                      letterSpacing: 1,
-                      wordBreak: 'break-word',
-                      overflowWrap: 'anywhere',
-                      whiteSpace: 'normal',
-                      width: '100%',
-                      textAlign: 'center',
-                    }}
-                  >
+                <Box key={grupo} sx={{ mb: 6, p: 3, borderRadius: 4, backgroundColor: groupBgColor, boxShadow: 3 }}>
+                  <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2, color: primaryColor, textTransform: 'uppercase', textAlign: 'center' }}>
                     {grupo.replaceAll('_', ' ')}
                   </Typography>
-                  {Object.entries(sectores).map(([sector, fichas]) => (
-                    <Box
-                      key={sector}
-                      sx={{
-                        mb: 4,
-                        pl: 2,
-                        py: 2,
-                        backgroundColor: stringToColor(sector, "0A"), // ← más claro
-                        borderRadius: 2,
-                      }}
-                    >
-                      <Typography
-                        variant="h6"
-                        sx={{
-                          fontWeight: 600,
-                          color: primaryColor,
-                          mb: 1,
-                          wordBreak: 'break-word',
-                          overflowWrap: 'anywhere',
-                          whiteSpace: 'normal',
-                          width: '100%',
-                          textAlign: 'center',
-                        }}
-                      >
-                        {sector.replaceAll('_', ' ')}
-                      </Typography>
 
-                      <Grid container spacing={2} justifyContent="center">
-                        {fichas.map((item) => {
-                          const colorBase = stringToColor(item.grupo, "22");
-                          const hoverColor = stringToColor(item.grupo, "44");
+                  {Object.entries(sectores).map(([sector, fichas]) => {
+                    const sortedFichas = [...fichas].sort((a, b) => a.cod.localeCompare(b.cod));
 
-                          return (
-                            <Grid item xs={12} sm={6} md={4} lg={3} key={item.cod}>
-                              <Box
-                                component="div"
-                                onClick={() => handleFichaClick(item)}
-                                sx={{
-                                  cursor: 'pointer',
-                                  transition: '0.3s',
-                                  '&:hover .hoverCard': {
-                                    bgcolor: hoverColor,
-                                  },
-                                }}
-                              >
-                                <Card
-                                  className="hoverCard"
+                    return (
+                      <Box key={sector} sx={{ mb: 4, pl: 2, py: 2, backgroundColor: stringToColor(sector, "0A"), borderRadius: 2 }}>
+                        <Typography variant="h6" sx={{ fontWeight: 600, color: primaryColor, mb: 1, textAlign: 'center' }}>
+                          {sector.replaceAll('_', ' ')}
+                        </Typography>
+
+                        <Grid container spacing={2} justifyContent="center">
+                          {sortedFichas.map((item) => {
+                            const colorBase = stringToColor(item.grupo, "22");
+                            const hoverColor = stringToColor(item.grupo, "44");
+
+                            return (
+                              <Grid item xs={12} sm={6} md={4} lg={3} key={item.cod}>
+                                <Box
+                                  component="div"
+                                  onClick={() => handleFichaClick(item)}
                                   sx={{
-                                    height: '100%',
-                                    bgcolor: colorBase,
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    justifyContent: 'space-between',
-                                    alignItems: 'center',
-                                    textAlign: 'center',
-                                    padding: 1.5,
-                                    borderRadius: 3,
-                                    boxShadow: 3,
-                                    overflow: 'hidden',
-                                    transition: 'all 0.3s ease',
+                                    cursor: 'pointer',
+                                    transition: '0.3s',
+                                    '&:hover .hoverCard': { bgcolor: hoverColor },
                                   }}
-                                  elevation={4}
                                 >
-                                  <Box
+                                  <Card
+                                    className="hoverCard"
                                     sx={{
-                                      width: '100%',
-                                      height: 70,
-                                      borderRadius: 2,
-                                      overflow: 'hidden',
-                                      position: 'relative',
-                                      mb: 1,
-                                      '&:hover .image-zoom': {
-                                        transform: 'scale(1.1)',
-                                      }
+                                      height: '100%',
+                                      bgcolor: colorBase,
+                                      display: 'flex',
+                                      flexDirection: 'column',
+                                      justifyContent: 'space-between',
+                                      alignItems: 'center',
+                                      textAlign: 'center',
+                                      padding: 1.5,
+                                      borderRadius: 3,
+                                      boxShadow: 3,
+                                      transition: 'all 0.3s ease',
                                     }}
+                                    elevation={4}
                                   >
                                     <Box
-                                      component="img"
-                                      className="image-zoom"
-                                      src={`/img/${item.grupo}.jpeg`}
-                                      onError={(e) => {
-                                        e.target.onerror = null;
-                                        e.target.src = "/img/default.jpeg";
-                                        e.target.style.objectFit = 'contain';
-                                      }}
-                                      alt={item.grupo}
                                       sx={{
                                         width: '100%',
-                                        height: '100%',
-                                        objectFit: 'cover',
-                                        transition: 'transform 0.5s ease',
-                                        position: 'absolute',
-                                        top: 0,
-                                        left: 0,
+                                        height: 70,
+                                        borderRadius: 2,
+                                        overflow: 'hidden',
+                                        position: 'relative',
+                                        mb: 1,
+                                        '&:hover .image-zoom': { transform: 'scale(1.1)' }
                                       }}
-                                    />
-                                  </Box>
+                                    >
+                                      <Box
+                                        component="img"
+                                        className="image-zoom"
+                                        src={obtenerImagenPorCod(item.cod, item.grupo)}
 
-                                  <Box sx={{ px: 1, width: '100%' }}>
-                                    <Typography variant="h6" sx={{ fontWeight: 500, lineHeight: 1.2, mb: 0.5 }}>
-                                    {/* {item.cod.split(" ").slice(1).join(" ")} */}
-                                    {item.cod.replace(/_/g, ' ')}
+                                        onError={(e) => {
+                                          e.target.onerror = null;
+                                          e.target.src = "/img/default.jpeg";
+                                          // e.target.style.objectFit = 'contain';
+                                        }}
+                                        alt={item.grupo}
+                                        sx={{
+                                          width: '100%',
+                                          height: '100%',
+                                          objectFit: 'cover',
+                                          transition: 'transform 0.5s ease',
+                                          position: 'absolute',
+                                          top: 0,
+                                          left: 0,
+                                        }}
+                                      />
+                                    </Box>
 
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.1, fontSize: '0.8rem' }}>
-                                      {`${item.codigo.split(" ")[0]}`}
-                                    </Typography>
-                                  </Box>
-                                </Card>
-                              </Box>
-                            </Grid>
-                          );
-                        })}
-                      </Grid>
-                    </Box>
-                  ))}
+                                    <Box sx={{ px: 1, width: '100%' }}>
+                                      <Typography variant="h6" sx={{ fontWeight: 500, lineHeight: 1.2, mb: 0.5 }}>
+                                        {item.cod.replace(/_/g, ' ')}
+                                      </Typography>
+
+                                    </Box>
+                                  </Card>
+                                </Box>
+                              </Grid>
+                            );
+                          })}
+                        </Grid>
+                      </Box>
+                    );
+                  })}
                 </Box>
               );
             })}
           </Box>
         </Container>
       </div>
+
       <ScrollToTop />
       <ToastContainer />
     </>
