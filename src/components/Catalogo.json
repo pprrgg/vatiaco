@@ -17,27 +17,27 @@
     },
     {
         "categoria": "libre",
-        "codigo": "AGR010 PANTALLAS TÉRMICAS EN INVERNADEROS",
+        "codigo": "A G R020 RECUPERACIÓN",
         "sector": "Agrario",
         "grupo": "Certificados_de_Ahorro_Energético",
-        "cod": "Agr010PantallasTérmicasEnInvernaderos",
-        "co": "AGR010P"
+        "cod": "AGR020_Recuperación_del_calor_del_proceso_de_preenfriamiento_de_la_leche_para_usos_térmicos_en_la_explotación_ganadera",
+        "co": "AGR020"
     },
     {
         "categoria": "libre",
-        "codigo": "AGR010 ANEXO III DECLARACIÓN RESPONSABLE DEL VALOR DEL",
+        "codigo": "A G R010 PANTALLAS",
         "sector": "Agrario",
         "grupo": "Certificados_de_Ahorro_Energético",
-        "cod": "Agr010AnexoIiiDeclaraciónResponsableDelValorDel",
-        "co": "AGR010A"
+        "cod": "AGR010_Pantallas_térmicas_en_invernaderos",
+        "co": "AGR010"
     },
     {
         "categoria": "libre",
-        "codigo": "AGR020 RECUPERACIÓN DEL CALOR DEL PROCESO DE PREENFRIAMIENTO DE LA LECHE PARA USOS TÉRMICOS EN LA EXPLOTACIÓN GANADERA",
+        "codigo": "A G R010 A N E X O I I I D E C L A R A C I Ó N R E S P O N S A B L E D E L V A L O R D E L",
         "sector": "Agrario",
         "grupo": "Certificados_de_Ahorro_Energético",
-        "cod": "Agr020RecuperaciónDelCalorDelProcesoDePreenfriamientoDeLaLecheParaUsosTérmicosEnLaExplotaciónGanadera",
-        "co": "AGR020R"
+        "cod": "AGR010_ANEXO_III_DECLARACIÓN_RESPONSABLE_DEL_VALOR_DEL",
+        "co": "AGR010"
     },
     {
         "categoria": "libre",

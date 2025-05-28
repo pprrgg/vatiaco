@@ -376,7 +376,9 @@ const Fichas = () => {
 
                                   <Box sx={{ px: 1, width: '100%' }}>
                                     <Typography variant="h6" sx={{ fontWeight: 500, lineHeight: 1.2, mb: 0.5 }}>
-                                      {item.codigo.split(" ").slice(1).join(" ")}
+                                    {/* {item.cod.split(" ").slice(1).join(" ")} */}
+                                    {item.cod.replace(/_/g, ' ')}
+
                                     </Typography>
                                     <Typography variant="body2" color="text.secondary" sx={{ lineHeight: 1.1, fontSize: '0.8rem' }}>
                                       {`${item.codigo.split(" ")[0]}`}
