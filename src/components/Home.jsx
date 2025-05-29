@@ -12,7 +12,7 @@ import {
   CardActionArea,
   Accordion,
   AccordionSummary,
-  AccordionDetails, Divider
+  AccordionDetails, Divider, Link
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import EngineeringIcon from "@mui/icons-material/Engineering";
@@ -343,8 +343,6 @@ const HomePage = () => {
             position: "relative",
           }}
         >
-
-
           <Typography
             variant="h6"
             color="textPrimary"
@@ -366,8 +364,6 @@ const HomePage = () => {
             </Box>{" "}
             that save today and transform tomorrow.
           </Typography>
-
-
           <Box
             sx={{
               display: "flex",
@@ -387,8 +383,6 @@ const HomePage = () => {
 
             <Divider sx={{ width: "60%" }} />
           </Box>
-
-
           <Box
             sx={{
               display: "flex",
@@ -438,7 +432,6 @@ const HomePage = () => {
               </Typography>
             </Box>
           </Box>
-
           <Box
             sx={{
               display: "flex",
@@ -449,7 +442,6 @@ const HomePage = () => {
             }}
           >
             <Divider sx={{ width: "60%" }} />
-
             <Box sx={{ display: "flex", gap: 1, justifyContent: "center" }}>
               <SolarPowerIcon color="warning" fontSize="small" />
               <EnergySavingsLeafIcon color="success" fontSize="small" />
@@ -459,8 +451,7 @@ const HomePage = () => {
             <Divider sx={{ width: "60%" }} />
           </Box>
 
-
-          <Typography
+          {/* <Typography
             variant="h6"
             color="textPrimary"
             sx={{ fontWeight: 500, mb: 0.5 }}
@@ -477,10 +468,54 @@ const HomePage = () => {
             <Box component="span" sx={{ fontWeight: 600 }}>
             </Box>{" "}
             At VATIACO, we help companies, communities, and individuals reduce their energy consumption, optimize their resources, and lead the transition toward a smarter, cleaner, and more collaborative energy model. From energy audits and savings certificates to energy communities, we offer turnkey solutions with a technical, transparent, and sustainable approach.
+          </Typography> */}
+
+          <Typography
+            variant="h6"
+            color="textPrimary"
+            sx={{ fontWeight: 500, mb: 0.5 }}
+          >
+            <Box component="span" sx={{ fontWeight: 900 }}>
+              VATIACO es un espacio dedicado a explicar, asesorar y acompañar a personas, comunidades y empresas en la comprensión y mejora de su consumo energético. Desde analizar una factura hasta evaluar la viabilidad de una instalación solar,
+              el objetivo es ofrecer contenido claro, técnico y confiable. Para ello se pone a disposición, de forma libre y gratuita {' '}
+              <Link
+                href="https://creativecommons.org/licenses/by/4.0/deed.es"
+                target="_blank"
+                rel="noopener noreferrer"
+                underline="hover"
+              >
+                <img
+                  src="https://licensebuttons.net/l/by/4.0/88x31.png"
+                  alt="Licencia Creative Commons Atribución 4.0"
+                  style={{ verticalAlign: 'middle', marginRight: 4 }}
+                />
+                con atribución requerida
+              </Link>, una colección de documentos técnicos personalizables para apoyar el análisis y la planificación energética.
+            </Box>
           </Typography>
+
+          <Typography
+    variant="body2"
+    color="text.secondary"
+    sx={{ fontStyle: 'italic', mt: 1 }}
+  >
+    VATIACO is a space dedicated to explaining, advising, and supporting individuals, communities, and companies in understanding and improving their energy consumption. From analyzing a bill to assessing the feasibility of a solar installation, the goal is to provide clear, technical, and reliable content.  To that end a freely available collection of customizable technical documents is offered,{' '}
+    <Link
+      href="https://creativecommons.org/licenses/by/4.0/deed.en"
+      target="_blank"
+      rel="noopener noreferrer"
+      underline="hover"
+    >
+      <img
+        src="https://licensebuttons.net/l/by/4.0/88x31.png"
+        alt="Creative Commons Attribution 4.0 License"
+        style={{ verticalAlign: 'middle', marginRight: 4 }}
+      />
+      with attribution required
+    </Link>, to support energy analysis and planning.
+  </Typography>
+
         </Container>
-
-
       </div>)}
 
       {1 && (<div id="servicios">
