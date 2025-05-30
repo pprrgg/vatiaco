@@ -477,7 +477,9 @@ const HomePage = () => {
           >
             <Box component="span" sx={{ fontWeight: 900 }}>
               VATIACO es un espacio dedicado a explicar, asesorar y acompañar a personas, comunidades y empresas en la comprensión y mejora de su consumo energético. Desde analizar una factura hasta evaluar la viabilidad de una instalación solar,
-              el objetivo es ofrecer contenido claro, técnico y confiable. Para ello se pone a disposición, de forma libre y gratuita {' '}
+              el objetivo es ofrecer contenido claro, técnico y confiable. Para ello se pone a disposición una colección de documentos técnicos, personalizables en linea, para apoyar el análisis y la planificación energética, 
+              no es necesario registrarse, tampoco se almacena ni se cede la informacion aportada y
+              son de uso libre  y gratuito bajo licencia Creative Commons con atribución requerida. {' '}
               <Link
                 href="https://creativecommons.org/licenses/by/4.0/deed.es"
                 target="_blank"
@@ -485,35 +487,39 @@ const HomePage = () => {
                 underline="hover"
               >
                 <img
-                  src="https://licensebuttons.net/l/by/4.0/88x31.png"
-                  alt="Licencia Creative Commons Atribución 4.0"
-                  style={{ verticalAlign: 'middle', marginRight: 4 }}
-                />
-                con atribución requerida
-              </Link>, una colección de documentos técnicos personalizables para apoyar el análisis y la planificación energética.
+                src="https://licensebuttons.net/l/by/4.0/88x31.png"
+                alt="Creative Commons Attribution 4.0 License"
+                style={{ verticalAlign: 'middle', marginRight: 4 }}
+              />
+              </Link>
             </Box>
           </Typography>
 
           <Typography
-    variant="body2"
-    color="text.secondary"
-    sx={{ fontStyle: 'italic', mt: 1 }}
-  >
-    VATIACO is a space dedicated to explaining, advising, and supporting individuals, communities, and companies in understanding and improving their energy consumption. From analyzing a bill to assessing the feasibility of a solar installation, the goal is to provide clear, technical, and reliable content.  To that end a freely available collection of customizable technical documents is offered,{' '}
-    <Link
-      href="https://creativecommons.org/licenses/by/4.0/deed.en"
-      target="_blank"
-      rel="noopener noreferrer"
-      underline="hover"
-    >
-      <img
-        src="https://licensebuttons.net/l/by/4.0/88x31.png"
-        alt="Creative Commons Attribution 4.0 License"
-        style={{ verticalAlign: 'middle', marginRight: 4 }}
-      />
-      with attribution required
-    </Link>, to support energy analysis and planning.
-  </Typography>
+            variant="body2"
+            color="text.secondary"
+            sx={{ fontStyle: 'italic', mt: 1 }}
+          >
+            VATIACO is a space dedicated to explaining, advising, and supporting individuals, communities, and companies in understanding and improving their energy consumption. From analyzing a bill to evaluating the feasibility of a solar installation, the goal is to provide clear, technical, and reliable content.
+
+To this end, a collection of customizable online technical documents is made available to support energy analysis and planning. No registration is required, no information is stored or shared, and all resources are free 
+to use under a Creative Commons license, with attribution required. {' '}
+            <Link
+              href="https://creativecommons.org/licenses/by/4.0/deed.en"
+              target="_blank"
+              rel="noopener noreferrer"
+              underline="hover"
+            >
+
+              
+              <img
+                src="https://licensebuttons.net/l/by/4.0/88x31.png"
+                alt="Creative Commons Attribution 4.0 License"
+                style={{ verticalAlign: 'middle', marginRight: 4 }}
+              />
+            </Link>
+            
+          </Typography>
 
         </Container>
       </div>)}
