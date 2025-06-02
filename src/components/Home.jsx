@@ -12,7 +12,7 @@ import {
   CardActionArea,
   Accordion,
   AccordionSummary,
-  AccordionDetails, Divider, Link
+  AccordionDetails, Divider, Link, Paper
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import EngineeringIcon from "@mui/icons-material/Engineering";
@@ -39,6 +39,12 @@ import EnergySavingsLeafIcon from "@mui/icons-material/EnergySavingsLeaf";
 import BoltIcon from "@mui/icons-material/Bolt";
 import Catalogo from "./Catalogo.json";
 
+import LanguageIcon from '@mui/icons-material/Language';
+import DescriptionIcon from '@mui/icons-material/Description';
+import LockOpenIcon from '@mui/icons-material/LockOpen';
+import SecurityIcon from '@mui/icons-material/Security';
+import CopyrightIcon from '@mui/icons-material/Copyright';
+
 
 const groupedData = Catalogo.reduce((acc, item) => {
   if (!acc[item.grupo]) acc[item.grupo] = [];
@@ -48,6 +54,83 @@ const groupedData = Catalogo.reduce((acc, item) => {
 
 
 const HomePage = () => {
+
+  const icons = [
+    LanguageIcon,
+    EnergySavingsLeafIcon,
+    BoltIcon,
+    DescriptionIcon,
+    SecurityIcon,
+    CopyrightIcon
+  ];
+  
+  const texts = [
+    <>
+      <Box component="span" sx={{ fontWeight: 700, color: "primary.main" }}>
+        Plataforma web interactiva
+      </Box>
+    </>,
+    <>
+
+      Dedicada a explicar, asesorar y acompaña a personas, comunidades y empresas en la comprensión y mejora de su gasto energético.
+    </>,
+    "Desde analizar una factura hasta evaluar la viabilidad de una instalación solar, el objetivo es ofrecer contenido claro, técnico y confiable.",
+    <>
+      Colección de documentos técnicos de uso libre y gratuito. 
+      , personalizables en línea, para apoyar el análisis y la planificación energética.
+    </>,
+"No es necesario registrarse, tampoco se almacena ni se cede la información técnica aportada."
+,
+<>
+Licencia Creative Commons con atribución requerida.{" "}
+<Link
+  href="https://creativecommons.org/licenses/by/4.0/deed.es"
+  target="_blank"
+  rel="noopener noreferrer"
+  underline="hover"
+>
+  <img
+    src="https://licensebuttons.net/l/by/4.0/88x31.png"
+    alt="Creative Commons Attribution 4.0 License"
+    style={{ verticalAlign: "middle", marginRight: 4 }}
+  />
+</Link>
+</>,
+  ];
+
+  const textsIngles = [
+    <>
+      <Box component="span" sx={{ fontWeight: 700, color: "primary.main" }}>
+        Interactive web platform
+      </Box>
+    </>,
+    <>
+      Dedicated to explain, advise, and support individuals, communities, and businesses in understanding and improving their energy consumption.
+    </>,
+    "From analyzing a bill to assessing the feasibility of a solar installation, the goal is to provide clear, technical, and reliable content.",
+    <>
+      A collection of technical documents is available for free use 
+      , customizable online, to support energy analysis and planning.
+    </>,
+"No registration is required, nor is the technical information provided stored or shared."
+,
+<>
+  Creative Commons license with attribution required.{" "}
+  <Link
+    href="https://creativecommons.org/licenses/by/4.0/deed.en"
+    target="_blank"
+    rel="noopener noreferrer"
+    underline="hover"
+  >
+    <img
+      src="https://licensebuttons.net/l/by/4.0/88x31.png"
+      alt="Creative Commons Attribution 4.0 License"
+      style={{ verticalAlign: "middle", marginRight: 4 }}
+    />
+  </Link>
+</>,
+  ];
+
 
   // Función para generar color desde string (la defines fuera del componente)
   const stringToColor = (str, alpha = "99") => {
@@ -428,7 +511,7 @@ const HomePage = () => {
                   fontFamily: "'Roboto', 'Arial', sans-serif",
                 }}
               >
-                Engineering
+                Ingenieros
               </Typography>
             </Box>
           </Box>
@@ -451,78 +534,70 @@ const HomePage = () => {
             <Divider sx={{ width: "60%" }} />
           </Box>
 
-          {/* <Typography
-            variant="h6"
-            color="textPrimary"
-            sx={{ fontWeight: 500, mb: 0.5 }}
-          >
-            <Box component="span" sx={{ fontWeight: 900 }}>
-              En VATIACO ayudamos a empresas, comunidades y particulares a reducir su consumo energético, optimizar sus recursos y liderar la transición hacia un modelo energético más inteligente, limpio y colaborativo. Desde auditorías y CAEs hasta comunidades energéticas, ofrecemos soluciones llave en mano con un enfoque técnico, transparente y sostenible.            </Box>{" "}
-          </Typography>
 
-          <Typography
-            variant="h6"
-            color="textSecondary"
-            sx={{ fontWeight: 400, fontStyle: "italic" }}
-          >
-            <Box component="span" sx={{ fontWeight: 600 }}>
-            </Box>{" "}
-            At VATIACO, we help companies, communities, and individuals reduce their energy consumption, optimize their resources, and lead the transition toward a smarter, cleaner, and more collaborative energy model. From energy audits and savings certificates to energy communities, we offer turnkey solutions with a technical, transparent, and sustainable approach.
-          </Typography> */}
 
           <Typography
             variant="h6"
             color="textPrimary"
             sx={{ fontWeight: 500, mb: 0.5 }}
           >
-            <Box component="span" sx={{ fontWeight: 900 }}>
-              VATIACO es un espacio dedicado a explicar, asesorar y acompañar a personas, comunidades y empresas en la comprensión y mejora de su consumo energético. Desde analizar una factura hasta evaluar la viabilidad de una instalación solar,
-              el objetivo es ofrecer contenido claro, técnico y confiable. Para ello se pone a disposición una colección de documentos técnicos, personalizables en linea, para apoyar el análisis y la planificación energética, 
-              no es necesario registrarse, tampoco se almacena ni se cede la informacion aportada y
-              son de uso libre  y gratuito bajo licencia Creative Commons con atribución requerida. {' '}
-              <Link
-                href="https://creativecommons.org/licenses/by/4.0/deed.es"
-                target="_blank"
-                rel="noopener noreferrer"
-                underline="hover"
-              >
-                <img
-                src="https://licensebuttons.net/l/by/4.0/88x31.png"
-                alt="Creative Commons Attribution 4.0 License"
-                style={{ verticalAlign: 'middle', marginRight: 4 }}
-              />
-              </Link>
-            </Box>
-          </Typography>
-
-          <Typography
-            variant="body2"
-            color="text.secondary"
-            sx={{ fontStyle: 'italic', mt: 1 }}
-          >
-            VATIACO is a space dedicated to explaining, advising, and supporting individuals, communities, and companies in understanding and improving their energy consumption. From analyzing a bill to evaluating the feasibility of a solar installation, the goal is to provide clear, technical, and reliable content.
-
-To this end, a collection of customizable online technical documents is made available to support energy analysis and planning. No registration is required, no information is stored or shared, and all resources are free 
-to use under a Creative Commons license, with attribution required. {' '}
-            <Link
-              href="https://creativecommons.org/licenses/by/4.0/deed.en"
-              target="_blank"
-              rel="noopener noreferrer"
-              underline="hover"
-            >
-
-              
-              <img
-                src="https://licensebuttons.net/l/by/4.0/88x31.png"
-                alt="Creative Commons Attribution 4.0 License"
-                style={{ verticalAlign: 'middle', marginRight: 4 }}
-              />
-            </Link>
-            
           </Typography>
 
         </Container>
       </div>)}
+      {1 && (
+        <div id="descripcion">
+          <Container
+            sx={{
+              py: 6,
+              textAlign: "center",
+              backgroundColor: "#f5f7fa",
+              borderRadius: 2,
+              position: "relative",
+            }}
+          >
+            <Box
+              sx={{
+                width: "100%",
+                maxWidth: 800,
+                mx: "auto",
+                p: 2,
+                display: "grid",
+                gridTemplateColumns: "1fr",
+                gap: 5,  // más separación vertical
+                mt: 4,
+                boxSizing: "border-box",
+              }}
+            >
+              {texts.map((item, index) => {
+                const Icon = icons[index % icons.length];
+                return (
+                  <Card key={index} sx={{ width: "100%", p: 2, boxSizing: "border-box" }}>
+                    <Box sx={{ display: "flex", justifyContent: "center", mb: 2 }}>
+                      <Icon fontSize="large" />
+                    </Box>
+                    <Typography variant="body1" sx={{ fontSize: '1.3rem' }}>
+                      {item}
+                    </Typography>
+                    <Typography
+                      variant="body2"
+                      sx={{
+                        fontStyle: "italic",
+                        color: "gray",
+                        fontSize: "0.85rem",
+                        mt: 1
+                      }}
+                    >
+                      {textsIngles[index]}
+                    </Typography>
+                  </Card>
+                );
+              })}
+            </Box>
+          </Container>
+        </div>
+      )}
+
 
       {1 && (<div id="servicios">
         <Container
