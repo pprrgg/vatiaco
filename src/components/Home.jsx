@@ -63,7 +63,7 @@ const HomePage = () => {
     SecurityIcon,
     CopyrightIcon
   ];
-  
+
   const texts = [
     <>
       <Box component="span" sx={{ fontWeight: 700, color: "primary.main" }}>
@@ -72,30 +72,29 @@ const HomePage = () => {
     </>,
     <>
 
-      Dedicada a explicar, asesorar y acompaña a personas, comunidades y empresas en la comprensión y mejora de su gasto energético.
+      Dedicada a explicar, asesorar y acompañar a personas, comunidades y empresas en la comprensión y mejora de su gasto energético.
     </>,
     "Desde analizar una factura hasta evaluar la viabilidad de una instalación solar, el objetivo es ofrecer contenido claro, técnico y confiable.",
     <>
-      Colección de documentos técnicos de uso libre y gratuito. 
-      , personalizables en línea, para apoyar el análisis y la planificación energética.
+      Colección de documentos técnicos de uso libre y gratuito, personalizables en línea, para apoyar el análisis y la planificación energética.
     </>,
-"No es necesario registrarse, tampoco se almacena ni se cede la información técnica aportada."
-,
-<>
-Licencia Creative Commons con atribución requerida.{" "}
-<Link
-  href="https://creativecommons.org/licenses/by/4.0/deed.es"
-  target="_blank"
-  rel="noopener noreferrer"
-  underline="hover"
->
-  <img
-    src="https://licensebuttons.net/l/by/4.0/88x31.png"
-    alt="Creative Commons Attribution 4.0 License"
-    style={{ verticalAlign: "middle", marginRight: 4 }}
-  />
-</Link>
-</>,
+    "No es necesario registrarse, tampoco se almacena ni se cede la información técnica aportada."
+    ,
+    <>
+      Licencia Creative Commons con atribución requerida.{" "}
+      <Link
+        href="https://creativecommons.org/licenses/by/4.0/deed.es"
+        target="_blank"
+        rel="noopener noreferrer"
+        underline="hover"
+      >
+        <img
+          src="https://licensebuttons.net/l/by/4.0/88x31.png"
+          alt="Creative Commons Attribution 4.0 License"
+          style={{ verticalAlign: "middle", marginRight: 4 }}
+        />
+      </Link>
+    </>,
   ];
 
   const textsIngles = [
@@ -109,26 +108,26 @@ Licencia Creative Commons con atribución requerida.{" "}
     </>,
     "From analyzing a bill to assessing the feasibility of a solar installation, the goal is to provide clear, technical, and reliable content.",
     <>
-      A collection of technical documents is available for free use 
+      A collection of technical documents is available for free use
       , customizable online, to support energy analysis and planning.
     </>,
-"No registration is required, nor is the technical information provided stored or shared."
-,
-<>
-  Creative Commons license with attribution required.{" "}
-  <Link
-    href="https://creativecommons.org/licenses/by/4.0/deed.en"
-    target="_blank"
-    rel="noopener noreferrer"
-    underline="hover"
-  >
-    <img
-      src="https://licensebuttons.net/l/by/4.0/88x31.png"
-      alt="Creative Commons Attribution 4.0 License"
-      style={{ verticalAlign: "middle", marginRight: 4 }}
-    />
-  </Link>
-</>,
+    "No registration is required, nor is the technical information provided stored or shared."
+    ,
+    <>
+      Creative Commons license with attribution required.{" "}
+      <Link
+        href="https://creativecommons.org/licenses/by/4.0/deed.en"
+        target="_blank"
+        rel="noopener noreferrer"
+        underline="hover"
+      >
+        <img
+          src="https://licensebuttons.net/l/by/4.0/88x31.png"
+          alt="Creative Commons Attribution 4.0 License"
+          style={{ verticalAlign: "middle", marginRight: 4 }}
+        />
+      </Link>
+    </>,
   ];
 
 
@@ -515,36 +514,11 @@ Licencia Creative Commons con atribución requerida.{" "}
               </Typography>
             </Box>
           </Box>
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              my: 6,
-              gap: 1.5,
-            }}
-          >
-            <Divider sx={{ width: "60%" }} />
-            <Box sx={{ display: "flex", gap: 1, justifyContent: "center" }}>
-              <SolarPowerIcon color="warning" fontSize="small" />
-              <EnergySavingsLeafIcon color="success" fontSize="small" />
-              <BoltIcon color="primary" fontSize="small" />
-            </Box>
-
-            <Divider sx={{ width: "60%" }} />
-          </Box>
-
-
-
-          <Typography
-            variant="h6"
-            color="textPrimary"
-            sx={{ fontWeight: 500, mb: 0.5 }}
-          >
-          </Typography>
-
         </Container>
       </div>)}
+
+
+
       {1 && (
         <div id="descripcion">
           <Container
