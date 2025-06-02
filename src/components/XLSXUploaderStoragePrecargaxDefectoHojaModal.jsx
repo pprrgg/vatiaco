@@ -21,6 +21,12 @@ import {
     Toolbar,
     Container,
     useMediaQuery,
+    Typography,
+    ListItem,
+    List,
+    ListItemText
+
+
 } from "@mui/material";
 
 import * as XLSX from "xlsx";
@@ -36,6 +42,8 @@ import AttachFileIcon from '@mui/icons-material/AttachFile';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MapaModal from "./MapaModal";
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 
 const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -179,24 +187,24 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
                         e.preventDefault();
                         const file = e.dataTransfer.files[0];
                         const ep = JSON.parse(sessionStorage.getItem('selectedFicha') || 'null');
-                    
+
                         if (!file) return;
-                    
+
                         if (!file.name.toLowerCase().endsWith(".xlsx") && !file.name.toLowerCase().endsWith(".xls")) {
                             toast.error("Sólo se permiten archivos Excel (.xlsx, .xls)");
                             return;
                         }
-                    
+
                         if (!ep || !ep.cod) {
                             toast.error("No se encontró el código de referencia para validar el archivo.");
                             return;
                         }
-                    
+
                         if (!file.name.toLowerCase().includes(ep.cod.toLowerCase())) {
                             toast.error(`El archivo debe ser 'WB_${ep.cod}_******** '.`);
                             return;
                         }
-                    
+
                         handleFileUpload(file);
                     }}
                     sx={{
@@ -280,112 +288,164 @@ const ExcelUploaderStorage = ({ openx, cerrarModalx, handleRecalculate }) => {
                             </Toolbar>
                         </Container>
                     </AppBar>
-
                     {excelDataFromSession && (
-                        <>
-                            <Box sx={{ overflowX: 'auto' }}>
-                                <Tabs value={activeTab} onChange={handleTabChange} variant="scrollable" scrollButtons="auto">
-                                    {Object.keys(excelDataFromSession)
-                                        .filter(sheet => sheet !== sheet.toUpperCase())
-                                        .map((sheet, index) => (
-                                            <Tab key={index} label={sheet} />
-                                        ))}
-                                </Tabs>
-                            </Box>
+  <>
+    <Box sx={{ overflowX: 'auto' }}>
+      <Tabs value={activeTab} onChange={handleTabChange} variant="scrollable" scrollButtons="auto">
+        {Object.keys(excelDataFromSession).map((sheet, index) => (
+          <Tab key={index} label={sheet} />
+        ))}
+      </Tabs>
+    </Box>
 
-                            <TableContainer component={Paper} sx={{ mt: 2 }}>
-                                <Table size="small">
-                                    <TableHead>
-                                        <TableRow>
-                                            {columns.map((column) => (
-                                                <TableCell key={column.accessor} sx={{ fontWeight: "bold", textAlign: "center" }}>
-                                                    {column.Header}
-                                                </TableCell>
-                                            ))}
-                                        </TableRow>
-                                    </TableHead>
-                                    <TableBody>
-                                        {data.map((row, rowIndex) => (
-                                            <TableRow key={rowIndex}>
-                                                {row.map((cell, cellIndex) => {
-                                                    const original = JSON.parse(sessionStorage.getItem("excelData"));
-                                                    const originalRow = original[activeSheet]?.[rowIndex + 1];
-                                                    const originalCell = originalRow ? originalRow[cellIndex] : null;
-                                                    const isCommaSeparated = typeof originalCell === 'string' && originalCell.includes(';');
-                                                    const options = isCommaSeparated ? originalCell.split(';') : [];
+    {(() => {
+      const sheetNames = Object.keys(excelDataFromSession);
+      const activeSheet = sheetNames[activeTab];
+      const isTooLargeSheet = excelDataFromSession[activeSheet]?.length > 33;
 
-                                                    return (
-                                                        <TableCell key={cellIndex}>
-                                                            {isCommaSeparated ? (
-                                                                <Select
-                                                                    value={originalCell.split(';')[0].trim()}
-                                                                    onChange={(e) => {
-                                                                        const selected = e.target.value;
+      if (isTooLargeSheet) {
+        return (
+          <Box sx={{ mt: 2, p: 3, textAlign: 'center' }}>
+            <TableContainer component={Paper} sx={{ mb: 2 }}>
+              <Table size="small">
+                <TableHead>
+                  <TableRow>
+                    {columns.map((column) => (
+                      <TableCell key={column.accessor} sx={{ fontWeight: "bold", textAlign: "center" }}>
+                        {column.Header}
+                      </TableCell>
+                    ))}
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  {data.slice(0, 4).map((row, rowIndex) => (
+                    <TableRow key={rowIndex}>
+                      {row.map((cell, cellIndex) => (
+                        <TableCell key={cellIndex}>{cell}</TableCell>
+                      ))}
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+            </TableContainer>
 
-                                                                        const sessionData = JSON.parse(sessionStorage.getItem("excelData"));
-                                                                        const sheetData = [...sessionData[activeSheet]];
+            <MoreVertIcon sx={{ color: 'gray' }} />
+            <Box sx={{ fontWeight: 'bold', color: 'gray', mt: 1 }}>
+              editar offline
+            </Box>
 
-                                                                        const currentOriginalCell = sheetData[rowIndex + 1][cellIndex];
+            <List dense sx={{ color: 'red', mt: 2, textAlign: 'left', display: 'inline-block' }}>
+              <ListItem>
+                <ListItemText primary="* Esta hoja es muy larga y no puede editarse directamente en la aplicación." />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="* Puedes exportarla, editarla externamente, e importarla." />
+              </ListItem>
+              <ListItem>
+                <ListItemText
+                  primary={
+                    <Typography variant="body2" sx={{ color: 'red' }}>
+                      * En la columna de fecha solo es necesario los dos primeros valores para saber el inicio y el periodo de los datos, por ejemplo para una lectura cuartohoraria
+                      <br />2025-01-01 0:0:0
+                      <br />2025-01-01 1:15:0
+                    </Typography>
+                  }
+                />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="* Se puede usar cualquer cantidad de medidas no estan obligadas a ser anuales, mensuales ..." />
+              </ListItem>
+              <ListItem>
+                <ListItemText primary="* Se debe mantener la estructura de la hoja, los nombres del cabecero, etc., cambiar solo los valores y la fecha." />
+              </ListItem>
+            </List>
+          </Box>
+        );
+      }
 
-                                                                        const allOptions = currentOriginalCell
-                                                                            .split(';')
-                                                                            .map(opt => opt.trim())
-                                                                            .filter(Boolean);
+      return (
+        <TableContainer component={Paper} sx={{ mt: 2 }}>
+          <Table size="small">
+            <TableHead>
+              <TableRow>
+                {columns.map((column) => (
+                  <TableCell key={column.accessor} sx={{ fontWeight: "bold", textAlign: "center" }}>
+                    {column.Header}
+                  </TableCell>
+                ))}
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {data.map((row, rowIndex) => (
+                <TableRow key={rowIndex}>
+                  {row.map((cell, cellIndex) => {
+                    const original = JSON.parse(sessionStorage.getItem("excelData"));
+                    const originalRow = original[activeSheet]?.[rowIndex + 1];
+                    const originalCell = originalRow ? originalRow[cellIndex] : null;
+                    const isCommaSeparated = typeof originalCell === 'string' && originalCell.includes(';');
 
-                                                                        const reordered = [selected, ...allOptions.filter(opt => opt !== selected)].join(';');
+                    return (
+                      <TableCell key={cellIndex}>
+                        {isCommaSeparated ? (
+                          <Select
+                            value={originalCell.split(';')[0].trim()}
+                            onChange={(e) => {
+                              const selected = e.target.value;
+                              const sessionData = JSON.parse(sessionStorage.getItem("excelData"));
+                              const sheetData = [...sessionData[activeSheet]];
 
-                                                                        sheetData[rowIndex + 1][cellIndex] = reordered;
+                              const currentOriginalCell = sheetData[rowIndex + 1][cellIndex];
+                              const allOptions = currentOriginalCell.split(';').map(opt => opt.trim()).filter(Boolean);
+                              const reordered = [selected, ...allOptions.filter(opt => opt !== selected)].join(';');
 
-                                                                        sessionData[activeSheet] = sheetData;
-                                                                        sessionStorage.setItem("excelData", JSON.stringify(sessionData));
-                                                                        setExcelDataFromSession(sessionData); // Fuerza refresco
-                                                                    }}
-                                                                    size="small"
-                                                                    sx={{ width: '100%' }}
-                                                                >
-                                                                    {originalCell
-                                                                        .split(';')
-                                                                        .map((option, index) => (
-                                                                            <MenuItem key={index} value={option.trim()}>
-                                                                                {option.trim()}
-                                                                            </MenuItem>
-                                                                        ))}
-                                                                </Select>
+                              sheetData[rowIndex + 1][cellIndex] = reordered;
+                              sessionData[activeSheet] = sheetData;
+                              sessionStorage.setItem("excelData", JSON.stringify(sessionData));
+                              setExcelDataFromSession(sessionData);
+                            }}
+                            size="small"
+                            sx={{ width: '100%' }}
+                          >
+                            {originalCell.split(';').map((option, index) => (
+                              <MenuItem key={index} value={option.trim()}>
+                                {option.trim()}
+                              </MenuItem>
+                            ))}
+                          </Select>
+                        ) : (
+                          <div
+                            contentEditable={cellIndex !== 0}
+                            suppressContentEditableWarning
+                            onBlur={(e) => {
+                              if (cellIndex !== 0) {
+                                const newValue = e.target.innerText.trim();
+                                const sessionData = JSON.parse(sessionStorage.getItem("excelData"));
+                                const sheetData = [...sessionData[activeSheet]];
+                                sheetData[rowIndex + 1][cellIndex] = newValue;
 
-                                                            ) : (
-                                                                <div
-                                                                    contentEditable={cellIndex !== 0}
-                                                                    suppressContentEditableWarning
-                                                                    onBlur={(e) => {
-                                                                        if (cellIndex !== 0) {
-                                                                            const newValue = e.target.innerText.trim();
+                                sessionData[activeSheet] = sheetData;
+                                sessionStorage.setItem("excelData", JSON.stringify(sessionData));
+                                setExcelDataFromSession(sessionData);
+                              }
+                            }}
+                          >
+                            {cell}
+                          </div>
+                        )}
+                      </TableCell>
+                    );
+                  })}
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
+      );
+    })()}
+  </>
+)}
 
-                                                                            // Modifica solo esta celda, dejando las demás intactas
-                                                                            const sessionData = JSON.parse(sessionStorage.getItem("excelData"));
-                                                                            const sheetData = [...sessionData[activeSheet]];
 
-                                                                            sheetData[rowIndex + 1][cellIndex] = newValue;
-
-                                                                            sessionData[activeSheet] = sheetData;
-                                                                            sessionStorage.setItem("excelData", JSON.stringify(sessionData));
-                                                                            setExcelDataFromSession(sessionData); // Refresca la tabla
-                                                                        }
-                                                                    }}
-                                                                >
-                                                                    {cell}
-                                                                </div>
-                                                            )}
-                                                        </TableCell>
-
-                                                    );
-                                                })}
-                                            </TableRow>
-                                        ))}
-                                    </TableBody>
-                                </Table>
-                            </TableContainer>
-                        </>
-                    )}
                 </Box>
             </Modal>
 

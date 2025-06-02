@@ -1,6 +1,14 @@
 [
     {
         "categoria": "libre",
+        "codigo": "O C E P010 FACTURACIÓN",
+        "sector": "Auditoria",
+        "grupo": "Auditorías_energéticas",
+        "cod": "OCEP010_Facturación_por_potencia_con_equipos_de_medida_tipo_4_o_5",
+        "co": "OCEP010"
+    },
+    {
+        "categoria": "libre",
         "codigo": "A E000 AUDITORÍAS",
         "sector": "Intro",
         "grupo": "Auditorías_energéticas",
@@ -14,14 +22,6 @@
         "grupo": "Sistemas_de_gestión_energética",
         "cod": "SGE000_Sistemas_de_gestión_energética",
         "co": "SGE000"
-    },
-    {
-        "categoria": "libre",
-        "codigo": "AEIN000 ALMACENAMIENTO DE ENERGÍA",
-        "sector": "Intro",
-        "grupo": "Almacenamiento_energético",
-        "cod": "Aein000AlmacenamientoDeEnergía",
-        "co": "AEIN000A"
     },
     {
         "categoria": "libre",
@@ -41,59 +41,59 @@
     },
     {
         "categoria": "libre",
-        "codigo": "AECE050 CONTRATO DE ENERGÍA INDEXADO AL POOL",
-        "sector": "IndexadoAlPool",
+        "codigo": "O C E E A010 CÁLCULO",
+        "sector": "Facturación_Por_Energía_Activa",
         "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "Aece050ContratoDeEnergíaIndexadoAlPool",
-        "co": "AECE050C"
+        "cod": "OCEEA010_Cálculo_de_los_perfiles_de_consumo_para_los_puntos_de_medida_tipo_4_y_tipo_5_de_consumidores_que_no_dispongan_de_registro_horario_de_consumo",
+        "co": "OCEEA010"
     },
     {
         "categoria": "libre",
-        "codigo": "AECE040 TRANSFORMADORES DE INTENSIDAD Y POTENCIAS CONTRATADAS",
+        "codigo": "O C E C050 CONTRATO",
+        "sector": "Tipos_de_contratos",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEC050_Contrato_de_energía_indexado_al_pool",
+        "co": "OCEC050"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "O C E P010 FACTURACIÓN",
+        "sector": "Facturación_por_potencia",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEP010_Facturación_por_potencia_con_equipos_de_medida_tipo_1_2_o_3",
+        "co": "OCEP010"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "O C E P050 FACTURACIÓN",
+        "sector": "Facturación_por_potencia",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEP050_Facturación_por_potencia_con_equipos_de_medida_tipo_4_o_5",
+        "co": "OCEP050"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "O C E V040 TRANSFORMADORES",
         "sector": "Varios",
         "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "Aece040TransformadoresDeIntensidadYPotenciasContratadas",
-        "co": "AECE040T"
+        "cod": "OCEV040_Transformadores_de_intensidad",
+        "co": "OCEV040"
     },
     {
         "categoria": "libre",
-        "codigo": "AECE020 OPTIMIZACIÓN POTENCIA SUPERIOR50 KW",
-        "sector": "Facturación_Por_Potencia_Contratada",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "Aece020OptimizaciónPotenciaSuperior50Kw",
-        "co": "AECE020O"
-    },
-    {
-        "categoria": "libre",
-        "codigo": "AECE010 OPTIMIZACIÓN POTENCIAS INFERIOR50 KW ABRIL2025",
-        "sector": "Facturación_Por_Potencia_Contratada",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "Aece010OptimizaciónPotenciasInferior50KwAbril2025",
-        "co": "AECE010O"
-    },
-    {
-        "categoria": "libre",
-        "codigo": "AECE010 OPTIMIZACIÓN POTENCIAS INFERIOR50 KW",
-        "sector": "Facturación_Por_Potencia_Contratada",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "Aece010OptimizaciónPotenciasInferior50Kw",
-        "co": "AECE010O"
-    },
-    {
-        "categoria": "libre",
-        "codigo": "OC000 OPTIMIZACIÓN DE CONTRATOS DE ENERGÍA",
-        "sector": "Intro",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "Oc000OptimizaciónDeContratosDeEnergía",
-        "co": "OC000O"
-    },
-    {
-        "categoria": "libre",
-        "codigo": "AECE030 FACTURACIÓN POR ENERGÍA REACTIVA",
+        "codigo": "O C E E R030 FACTURACIÓN POR",
         "sector": "Facturación_Por_Energía_Reactiva",
         "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "Aece030FacturaciónPorEnergíaReactiva",
-        "co": "AECE030F"
+        "cod": "OCEER030_Facturación_Por_energía_reactiva",
+        "co": "OCEER030"
+    },
+    {
+        "categoria": "libre",
+        "codigo": "S A E000 SISTEMAS",
+        "sector": "Intro",
+        "grupo": "Sistemas_de_almacenamiento_energético",
+        "cod": "SAE000_Sistemas_de_almacenamiento_energético",
+        "co": "SAE000"
     },
     {
         "categoria": "libre",
