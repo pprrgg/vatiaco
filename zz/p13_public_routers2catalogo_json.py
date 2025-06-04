@@ -41,6 +41,8 @@ def process_directory(base_dir):
                 cod, codigo, co = parse_filename(file)
                 # if not cod:
                 #     continue
+                if not cod:
+                    continue  # Salta archivos sin cod válido
 
                 resultado.append({
                     "categoria": "libre",
