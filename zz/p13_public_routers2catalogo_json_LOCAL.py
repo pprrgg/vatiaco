@@ -7,7 +7,7 @@ os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 def parse_filename(filename):
     # Quitar la extensión y guión bajo final
-    name = os.path.splitext(filename)[0].rstrip("_")
+    # name = os.path.splitext(filename)[0].rstrip("_")
 
     # Buscar el índice donde termina el "co": de inicio hasta la segunda mayúscula
     mayus_indices = [i for i, c in enumerate(name) if c.isupper()]
