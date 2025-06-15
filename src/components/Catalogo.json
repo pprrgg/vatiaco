@@ -3,1129 +3,13 @@
         "categoria": "libre",
         "sector": "Auditoria",
         "grupo": "Auditorías_energéticas",
-        "cod": "OCEP010_Facturación_por_potencia_con_equipos_de_medida_tipo_4_o_5"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Auditoria",
-        "grupo": "Auditorías_energéticas",
         "cod": "AAA000_Análisis_financiero"
     },
     {
         "categoria": "libre",
-        "sector": "Intro",
-        "grupo": "Auditorías_energéticas",
-        "cod": "AE000_Auditorías_energéticas"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Intro",
-        "grupo": "Sistemas_de_gestión_energética",
-        "cod": "SGE000_Sistemas_de_gestión_energética"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Intro",
-        "grupo": "Autoconsumo_energético",
-        "cod": "AE000_Autoconsumo_energético"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Intro",
-        "grupo": "Recarga_de_vehículos_eléctricos",
-        "cod": "RVE000_Recarga_de_vehículos_eléctricos"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Facturación_Por_Energía_Activa",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "OCEEA010_Cálculo_de_los_perfiles_de_consumo_para_los_puntos_de_medida_tipo_4_y_tipo_5_de_consumidores_que_no_dispongan_de_registro_horario_de_consumo"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Tipos_de_contratos",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "OCEC050_Contrato_de_energía_indexado_al_pool"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Facturación_por_potencia",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "OCEP010_Facturación_por_potencia_con_equipos_de_medida_tipo_1_2_o_3"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Facturación_por_potencia",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "OCEP050_Facturación_por_potencia_con_equipos_de_medida_tipo_4_o_5"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Varios",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "OCEV040_Transformadores_de_intensidad"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Facturación_Por_Energía_Reactiva",
-        "grupo": "Optimización_de_contratos_energéticos",
-        "cod": "OCEER030_Facturación_Por_energía_reactiva"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Intro",
-        "grupo": "Sistemas_de_almacenamiento_energético",
-        "cod": "SAE000_Sistemas_de_almacenamiento_energético"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Pobreza_Energética",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "Anexo_I_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES020S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES011_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES097"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES099_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES096_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES050_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES094_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES097_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES071_ANEXO_II_VALORES_DE_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES050_Adquisición_de_frigoríficos_de_alta_eficiencia"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES040_Sistema_de_automatización_y_control_para_viviendas_y_edificios_BACS1"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES011S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES070_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES030_Nueva_implantación_sustitución_o_ampliación_de_instalación_térmica_en_un_edificio_y_piscina_con_tecnología_solar_térmica"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES096"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES051S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES091_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES098_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES021_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES051_Adquisición_de_frigoríficocongelador_de_alta_eficiencia"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES052S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES093_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES080S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES053_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES052_Adquisición_de_congelador_de_alta_eficiencia"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES094_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES210_ANEXO_II_RENDIMIENTO_DE_CALDERA_SUSTITUIDA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES060_ANEXO_IV_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES020_Rehabilitación_de_la_parte_opaca_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_inferior_o_igual_al_25_por_ciento_de_la_envolvente_térmica_final"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES020_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES091_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES070_Renovación_o_sustitución_de_ventanas_en_edificios_de_viviendas"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES070S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES054_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES096_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES051_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES052_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES071_Renovación_o_sustitución_de_ventanas_en_edificios_de_viviendas_Canarias"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES220"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES060_Sustitución_de_caldera_de_combustión_por_una_bomba_de_calor_de_accionamiento_eléctrico"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES095_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES092_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES060_ANEXO_II_CASOS_DONDE_LA_CALDERA_DE_COMBUSTIÓN_SE_MANTIENE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES091_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_B3_o_B4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES095_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES030S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES230_ANEXO_II_FACTORES_PARA_EL_CÁLCULO_DEL_AHORRO_DE_ENERGÍA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES021_Rehabilitación_de_la_parte_opaca_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_inferior_o_igual_al_25_por_ciento_de_la_envolvente_térmica_final_Canarias"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES092_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES054S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES097_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES099"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES071S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES040_ANEXO_II1_TABLA_DE_FACTORES_DE_EFICIENCIA_PARA_EDIFICIOS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES053S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES090_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES093_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES080_Rehabilitación_profunda_de_edificios_de_viviendas"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES060S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES011_Rehabilitación_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_mayor_del_25_por_ciento_Canarias"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES094_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_E1"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES040S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES210"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES050S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES090_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES040_ANEXO_III_DECLARACIÓN_RESPONSABLE_DE_LA_EVALUACIÓN_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES010S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES060_ANEXO_III_EQUIVALENCIAS_CLIMAS_CTE_Y_ZONAS_CLIMÁTICAS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES095_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES220_ANEXO_II_FACTORES_PARA_EL_CÁLCULO_DEL_AHORRO_DE_ENERGÍA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES090_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES010_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES021S"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES060_ANEXO_VI_CONDICIONES_CONSIDERADAS_EN_ACS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES010_Rehabilitación_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_mayor_del_25_por_ciento"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES098"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES093_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_D1_D2_o_D3"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES053_Adquisición_de_lavadoras_de_alta_eficiencia"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES230"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES099_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES098_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES092_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_C1_C2_C3_o_C4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES054_Adquisición_de_lavavajillas_de_alta_eficiencia"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Residencial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "RES060_ANEXO_V_DOCUMENTACIÓN_TÉCNICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA030_ANEXO_III_CRITERIOS_ANTIFRAUDE_PARA_LA_CORRECTA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA030_ANEXO_II_REQUISITOS_PARA_LA_APLICACIÓN_DE_LA_FICHA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA050_ANEXO_III_KILOMETROS_REALIZADOS_SEGÚN_LA_TIPOLOGÍA_DEL"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA040_Movilidad_colaborativa_urbana_y_metropolitana"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA010_ANEXO_III_KILOMETROS_REALIZADOS_SEGÚN_LA_TIPOLOGÍA_DEL"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA040_ANEXO_III_CRITERIOS_ANTIFRAUDE_PARA_LA_CORRECTA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA040_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA010_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA050_Sustitución_de_vehículo_de_combustión_por_un_vehículo_eléctrico_puro"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA030_Vehículo_compartido_en_trayectos_de_largo_recorrido"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA040_ANEXO_II_REQUISITOS_PARA_LA_APLICACIÓN_DE_LA_FICHA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA010_ANEXO_II_AHORRO_ENERGÉTICO_POR_SUSTITUCIÓN_DE_NEUMÁTICO"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA020_ANEXO_II_REQUERIMIENTOS_TÉCNICOS_DE_LA_SOLUCIÓN_TELEMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA010"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA050_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Transporte",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TRA050_ANEXO_II_MÉTODOS_PARA_OBTENER_LOS_CONSUMOS_DE_VEHÍCULOS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER140_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_IV_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER175_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_IX_CONDICIONES_DE_TEMPERATURA_EXTERIOR_MEDIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER160_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER280_Sustitución_de_bomba_por_otra_más_eficiente"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER100_ANEXO_VII_CONDICIONES_DE_TEMPERATURA_EXTERIOR_MEDIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER150_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER_190_Reformado_de_aparatos_de_refrigeración_para_alimentos_y_bebidas_de_venta_directa"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER176_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER173_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_D1_D2_o_D3"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER090_Sustitución_del_refrigerante_de_una_instalación_frigorífica"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER240_Implantación_de_variador_de_velocidad"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER050_Sistema_de_automatización_y_control_para_edificios_del_sector_terciario_BACS1"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER171_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER200_Sustitución_de_aparato_de_refrigeración_con_función_de_venta_directa"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER220_ANEXO_II_FACTORES_PARA_EL_CÁLCULO_DEL_AHORRO_DE_ENERGÍA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER220_Sustitución_de_un_sistema_de_ventilación_existente_natural_o_mecánica_por_un_sistema_de_ventilación_mecánica_con_recuperación_de_calor_de_alta_eficiencia_en_edificios_no_residenciales"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER100_ANEXO_III_DOCUMENTACIÓN_TÉCNICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER030_ANEXO_II_TIEMPO_ANUAL_DE_FUNCIONAMIENTO_DEL_SISTEMA_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER170_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER120_Sustitución_de_quemador_modulante_de_caldera_de_combustión_de_gas"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER172_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER011_Rehabilitación_de_la_envolvente_térmica_de_edificios_terciarios_existentes_con_superficie_afectada_mayor_del_25_por_ciento_Canarias"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER061_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER260_Sustitución_de_un_Sistema_de_Alimentación_Ininterrumpida_SAI"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER179_ANEXO_IV_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER160_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_VI_CÁLCULO_DE_LA_DEMANDA_DE_ACS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER110_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_VII_CONDICIONES_CONSIDERADAS_EN_ACS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER178_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER177_ANEXO_IV_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER080_Rehabilitación_profunda_de_un_edificio_terciario_existente"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER177_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_C1_C2_C3_o_C4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_III_EQUIVALENCIAS_CLIMAS_CTE_Y_ZONAS_CLIMÁTICAS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER050_ANEXO_II1_TABLA_DE_FACTORES_DE_EFICIENCIA_PARA_EDIFICIOS_NO"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER178_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_D1_D2_o_D3"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER171_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER179_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER178_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_Sustitución_de_generador_de_climatización_por_bomba_de_calor_de_accionamiento_eléctrico"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER176_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_B3_o_B4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER100_ANEXO_V_CÁLCULO_DE_LA_DEMANDA_DE_ACS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER100_ANEXO_IV_CONDICIONES_CONSIDERADAS_EN_ACS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER177_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER140_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER020_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER100_Sustitución_de_caldera_de_combustión_existente_por_bomba_de_calor_de_accionamiento_eléctrico"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER172_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_C1_C2_C3_o_C4"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER170_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER020_Rehabilitación_de_la_parte_opaca_de_la_envolvente_térmica_de_edificios_terciarios_con_superficie_afectada_inferior_o_igual_del_25_por_ciento_de_la_envolvente_térmica_final"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_V_DOCUMENTACIÓN_TÉCNICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER100_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER172_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER210_ANEXO_II_RENDIMIENTO_DE_CALDERA_SUSTITUIDA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER170_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER170_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER210_Sustitución_de_calderas_individuales_colectiva_en_edificio_terciario_por_conexión_a_una_red_de_calor"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER178_ANEXO_IV_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER070_Nueva_implantación_sustitución_o_ampliación_de_instalación_térmica_en_un_edificio_y_piscina_con_tecnología_solar_térmica"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER100_ANEXO_VIII_RENDIMIENTO_DE_CALDERA_SUSTITUIDA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER061_Renovación_o_sustitución_de_ventanas_en_edificios_existentes_Canarias"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER171_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER150_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER021_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER190_ANEXO_II_COEFICIENTES_DE_AHORRO_C"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER010_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER173_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER179_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_E1"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER180_Sustitución_del_sistema_de_iluminación_vial_ambiental"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER050_ANEXO_III_DECLARACIÓN_RESPONSABLE_DE_LA_EVALUACIÓN_DE_LA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER174_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_E1"
-    },
-    {
-        "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER090_ANEXO_III_NOTA_INFORMATIVA_ACERCA_DE_LA_SUSTITUCIÓN_DE"
+        "cod": "TER175_Hibridación_en_modo_alternativo_de_caldera_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
     },
     {
         "categoria": "libre",
@@ -1137,43 +21,85 @@
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER280_Sustitución_de_bomba_por_otra_más_eficiente"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER050_ANEXO_III_DECLARACIÓN_RESPONSABLE_DE_LA_EVALUACIÓN_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER170_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER050_ANEXO_II1_TABLA_DE_FACTORES_DE_EFICIENCIA_PARA_EDIFICIOS_NO"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER011_Rehabilitación_de_la_envolvente_térmica_de_edificios_terciarios_existentes_con_superficie_afectada_mayor_del_25_por_ciento_Canarias"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER150_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER176_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_B3_o_B4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER170_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
         "cod": "TER179_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER060_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+        "cod": "TER110_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER280_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_TOTAL_DE_LA_BOMBA"
+        "cod": "TER090_ANEXO_II_TABLAS"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER176_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+        "cod": "TER100_ANEXO_IV_CONDICIONES_CONSIDERADAS_EN_ACS"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER030_Sustitución_del_sistema_de_iluminación_por_sistema_con_fuentes_luminosas_y_o_luminarias_tipo_LED"
+        "cod": "TER080_Rehabilitación_profunda_de_un_edificio_terciario_existente"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER173_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Terciario",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER140_Reforma_sustitución_o_nueva_instalación_de_planta_enfriadora_de_procesos_de_alta_eficiencia"
+        "cod": "TER210_ANEXO_II_RENDIMIENTO_DE_CALDERA_SUSTITUIDA"
     },
     {
         "categoria": "libre",
@@ -1185,19 +111,55 @@
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER173_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+        "cod": "TER178_ANEXO_IV_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER150_Reforma_sustitución_o_nueva_instalación_de_central_frigorífica_de_alta_eficiencia_con_sistemas_de_refrigeración_directa"
+        "cod": "TER260_Sustitución_de_un_Sistema_de_Alimentación_Ininterrumpida_SAI"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER176_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER040_ANEXO_VIII_CONDICIONES_GENERALES_PARA_CÁLCULO_DEL"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER177_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER030_Sustitución_del_sistema_de_iluminación_por_sistema_con_fuentes_luminosas_y_o_luminarias_tipo_LED"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
         "cod": "TER176_ANEXO_IV_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER100_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER_190_Reformado_de_aparatos_de_refrigeración_para_alimentos_y_bebidas_de_venta_directa"
     },
     {
         "categoria": "libre",
@@ -1215,31 +177,67 @@
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER175_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+        "cod": "TER178_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER010_Rehabilitación_de_la_envolvente_térmica_de_edificios_terciarios_existentes_con_superficie_afectada_mayor_del_25_por_ciento"
+        "cod": "TER220_ANEXO_II_FACTORES_PARA_EL_CÁLCULO_DEL_AHORRO_DE_ENERGÍA"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_VIII_CONDICIONES_GENERALES_PARA_CÁLCULO_DEL"
+        "cod": "TER100_ANEXO_III_DOCUMENTACIÓN_TÉCNICA"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER060_Renovación_o_sustitución_de_ventanas_en_edificios_terciarios_existentes"
+        "cod": "TER172_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER090_ANEXO_II_TABLAS"
+        "cod": "TER171_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER090_Sustitución_del_refrigerante_de_una_instalación_frigorífica"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER100_ANEXO_VII_CONDICIONES_DE_TEMPERATURA_EXTERIOR_MEDIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER150_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER174_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_E1"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER140_Reforma_sustitución_o_nueva_instalación_de_planta_enfriadora_de_procesos_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER180_Sustitución_del_sistema_de_iluminación_vial_ambiental"
     },
     {
         "categoria": "libre",
@@ -1251,25 +249,133 @@
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER175_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER160_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER140_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER170_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER010_Rehabilitación_de_la_envolvente_térmica_de_edificios_terciarios_existentes_con_superficie_afectada_mayor_del_25_por_ciento"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER171_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER172_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER173_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_D1_D2_o_D3"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
         "cod": "TER160_Sustitución_reforma_o_nueva_instalación_de_una_unidad_condensadora_de_alta_eficiencia"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER177_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+        "cod": "TER210_Sustitución_de_calderas_individuales_colectiva_en_edificio_terciario_por_conexión_a_una_red_de_calor"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER175_Hibridación_en_modo_alternativo_de_caldera_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
+        "cod": "TER040_ANEXO_IX_CONDICIONES_DE_TEMPERATURA_EXTERIOR_MEDIA"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER172_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+        "cod": "TER240_Implantación_de_variador_de_velocidad"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER173_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER140_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER280_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_TOTAL_DE_LA_BOMBA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER172_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_C1_C2_C3_o_C4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER040_ANEXO_VII_CONDICIONES_CONSIDERADAS_EN_ACS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER178_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_D1_D2_o_D3"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER174_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER021_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER040_ANEXO_III_EQUIVALENCIAS_CLIMAS_CTE_Y_ZONAS_CLIMÁTICAS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER200_Sustitución_de_aparato_de_refrigeración_con_función_de_venta_directa"
     },
     {
         "categoria": "libre",
@@ -1281,13 +387,181 @@
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER040_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_ESTACIONAL_DE_EQUIPOS"
+        "cod": "TER150_Reforma_sustitución_o_nueva_instalación_de_central_frigorífica_de_alta_eficiencia_con_sistemas_de_refrigeración_directa"
     },
     {
         "categoria": "libre",
         "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "TER174_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+        "cod": "TER040_Sustitución_de_generador_de_climatización_por_bomba_de_calor_de_accionamiento_eléctrico"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER060_Renovación_o_sustitución_de_ventanas_en_edificios_terciarios_existentes"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER090_ANEXO_III_NOTA_INFORMATIVA_ACERCA_DE_LA_SUSTITUCIÓN_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER061_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER070_Nueva_implantación_sustitución_o_ampliación_de_instalación_térmica_en_un_edificio_y_piscina_con_tecnología_solar_térmica"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER020_Rehabilitación_de_la_parte_opaca_de_la_envolvente_térmica_de_edificios_terciarios_con_superficie_afectada_inferior_o_igual_del_25_por_ciento_de_la_envolvente_térmica_final"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER172_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER061_Renovación_o_sustitución_de_ventanas_en_edificios_existentes_Canarias"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER010_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER100_Sustitución_de_caldera_de_combustión_existente_por_bomba_de_calor_de_accionamiento_eléctrico"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER040_ANEXO_IV_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER100_ANEXO_V_CÁLCULO_DE_LA_DEMANDA_DE_ACS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER178_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER020_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER177_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_C1_C2_C3_o_C4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER176_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER171_ANEXO_IV_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER100_ANEXO_VIII_RENDIMIENTO_DE_CALDERA_SUSTITUIDA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER179_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER179_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_no_residenciales_ubicados_en_la_zona_climática_E1"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER170_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER190_ANEXO_II_COEFICIENTES_DE_AHORRO_C"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER220_Sustitución_de_un_sistema_de_ventilación_existente_natural_o_mecánica_por_un_sistema_de_ventilación_mecánica_con_recuperación_de_calor_de_alta_eficiencia_en_edificios_no_residenciales"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER177_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER120_Sustitución_de_quemador_modulante_de_caldera_de_combustión_de_gas"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER160_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER175_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER030_ANEXO_II_TIEMPO_ANUAL_DE_FUNCIONAMIENTO_DEL_SISTEMA_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Terciario",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TER173_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
     },
     {
         "categoria": "libre",
@@ -1303,123 +577,669 @@
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND210_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+        "cod": "TER173_ANEXO_III_CONDICIONES_GENERALES_PARA_CÁLCULO_DE_LA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND090_ANEXO_II_INFORME_JUSTIFICATIVO_DE_LA_DEMANDA_DE_AIRE"
+        "cod": "TER177_ANEXO_IV_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND030_Sustitución_de_compresor_para_instalación_frigorífica"
+        "cod": "TER060_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND230_ANEXO_II_INFORME_JUSTIFICATIVO_DE_LOS_EQUIPOS_QUE_CEDEN"
+        "cod": "TER050_Sistema_de_automatización_y_control_para_edificios_del_sector_terciario_BACS1"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND060_Sustitución_de_generador_para_climatización_por_bomba_de_calor_de_accionamiento_eléctrico"
+        "cod": "TER040_ANEXO_V_DOCUMENTACIÓN_TÉCNICA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND060_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_ESTACIONAL_DE_EQUIPOS"
+        "cod": "TER040_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_ESTACIONAL_DE_EQUIPOS"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND010_ANEXO_II_INFORME_JUSTIFICATIVO_DE_LA_INSTALACIÓN_OBJETO_DE"
+        "cod": "TER040_ANEXO_VI_CÁLCULO_DE_LA_DEMANDA_DE_ACS"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Terciario",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND220_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+        "cod": "TER179_ANEXO_IV_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND170_Sustitución_de_motores_eléctricos_de_inducción"
+        "cod": "TRA030_ANEXO_III_CRITERIOS_ANTIFRAUDE_PARA_LA_CORRECTA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND190_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+        "cod": "TRA050_ANEXO_II_MÉTODOS_PARA_OBTENER_LOS_CONSUMOS_DE_VEHÍCULOS"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND160_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+        "cod": "TRA010"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND200_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
+        "cod": "TRA040_Movilidad_colaborativa_urbana_y_metropolitana"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND260_ANEXO_II_DECLARACIÓN_RESPONSABLE_POR_LA_EMPRESA"
+        "cod": "TRA040_ANEXO_II_REQUISITOS_PARA_LA_APLICACIÓN_DE_LA_FICHA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND040_ANEXO_II_DECLARACIÓN_FÓRMULAS_PARA_REALIZAR_LA"
+        "cod": "TRA010_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND060_ANEXO_III_EQUIVALENCIAS_CLIMAS_CTE_ZONAS_CLIMÁTICAS"
+        "cod": "TRA040_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND190_División_de_líneas_de_evaporación_en_instalación_frigorífica_centralizada"
+        "cod": "TRA030_ANEXO_II_REQUISITOS_PARA_LA_APLICACIÓN_DE_LA_FICHA"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND050_Sustitución_del_sistema_de_iluminación_por_sistema_con_fuentes_luminosas_y_o_luminarias_tipo_LED"
+        "cod": "TRA010_ANEXO_II_AHORRO_ENERGÉTICO_POR_SUSTITUCIÓN_DE_NEUMÁTICO"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND160_Unidad_condensadora_de_alta_eficiencia"
+        "cod": "TRA050_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND020_ANEXO_III_NOTA_INFORMATIVA_ACERCA_DE_LA_SUSTITUCIÓN_DE"
+        "cod": "TRA050_ANEXO_III_KILOMETROS_REALIZADOS_SEGÚN_LA_TIPOLOGÍA_DEL"
     },
     {
         "categoria": "libre",
-        "sector": "Industrial",
+        "sector": "Transporte",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND030_ANEXO_II_TABLAS"
+        "cod": "TRA010_ANEXO_III_KILOMETROS_REALIZADOS_SEGÚN_LA_TIPOLOGÍA_DEL"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Transporte",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TRA040_ANEXO_III_CRITERIOS_ANTIFRAUDE_PARA_LA_CORRECTA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Transporte",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TRA020_ANEXO_II_REQUERIMIENTOS_TÉCNICOS_DE_LA_SOLUCIÓN_TELEMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Transporte",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TRA030_Vehículo_compartido_en_trayectos_de_largo_recorrido"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Transporte",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "TRA050_Sustitución_de_vehículo_de_combustión_por_un_vehículo_eléctrico_puro"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Pobreza_Energética",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "Anexo_I_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES010_Rehabilitación_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_mayor_del_25_por_ciento"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES070S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES060_ANEXO_V_DOCUMENTACIÓN_TÉCNICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES051_Adquisición_de_frigoríficocongelador_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES060_Sustitución_de_caldera_de_combustión_por_una_bomba_de_calor_de_accionamiento_eléctrico"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES090_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES021_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES054S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES053S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES054_Adquisición_de_lavavajillas_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES096_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES220"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES051S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES098_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES011S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES020_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES097_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES080_Rehabilitación_profunda_de_edificios_de_viviendas"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES098_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES050_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES011_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES095_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES080S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES091_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES020_Rehabilitación_de_la_parte_opaca_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_inferior_o_igual_al_25_por_ciento_de_la_envolvente_térmica_final"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES093_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES050S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES021S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES010S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES230_ANEXO_II_FACTORES_PARA_EL_CÁLCULO_DEL_AHORRO_DE_ENERGÍA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES092_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_C1_C2_C3_o_C4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES095_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES099_ANEXO_III_TABLA_DE_COEFICIENTES_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES050_Adquisición_de_frigoríficos_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES040S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES090_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES220_ANEXO_II_FACTORES_PARA_EL_CÁLCULO_DEL_AHORRO_DE_ENERGÍA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES070_Renovación_o_sustitución_de_ventanas_en_edificios_de_viviendas"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES040_Sistema_de_automatización_y_control_para_viviendas_y_edificios_BACS1"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES230"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES051_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES053_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES093_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES091_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_B3_o_B4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES020S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES011_Rehabilitación_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_mayor_del_25_por_ciento_Canarias"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES030S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES053_Adquisición_de_lavadoras_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES095_Hibridación_en_modo_alternativo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_A3_o_A4"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES092_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES052S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES071_ANEXO_II_VALORES_DE_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES210"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES052_Adquisición_de_congelador_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES060_ANEXO_IV_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES094_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_E1"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES060_ANEXO_VI_CONDICIONES_CONSIDERADAS_EN_ACS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES097_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES090_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES094_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES094_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES010_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES030_Nueva_implantación_sustitución_o_ampliación_de_instalación_térmica_en_un_edificio_y_piscina_con_tecnología_solar_térmica"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES091_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES052_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES040_ANEXO_III_DECLARACIÓN_RESPONSABLE_DE_LA_EVALUACIÓN_DE_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES098"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES070_ANEXO_II_VALORES_DEL_COEFICIENTE_G_SEGÚN_ZONA_CLIMÁTICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES060_ANEXO_III_EQUIVALENCIAS_CLIMAS_CTE_Y_ZONAS_CLIMÁTICAS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES096"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES060_ANEXO_II_CASOS_DONDE_LA_CALDERA_DE_COMBUSTIÓN_SE_MANTIENE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES071_Renovación_o_sustitución_de_ventanas_en_edificios_de_viviendas_Canarias"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES071S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES096_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES092_ANEXO_III_TABLA_DE_COEFICIENTES1_DE_COBERTURA_POR_BIVALENCIA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES054_ANEXO_II_TABLAS_CON_VALORES_DE_REFERENCIA_CONSUMOS_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES021_Rehabilitación_de_la_parte_opaca_de_la_envolvente_térmica_de_edificios_de_viviendas_con_superficie_afectada_inferior_o_igual_al_25_por_ciento_de_la_envolvente_térmica_final_Canarias"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES093_Hibridación_en_modo_paralelo_de_caldera_s_de_combustión_con_bomba_de_calor_de_accionamiento_eléctrico_en_edificios_residenciales_ubicados_en_la_zona_climática_D1_D2_o_D3"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES060S"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES097"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES099_ANEXO_II_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES210_ANEXO_II_RENDIMIENTO_DE_CALDERA_SUSTITUIDA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES040_ANEXO_II1_TABLA_DE_FACTORES_DE_EFICIENCIA_PARA_EDIFICIOS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Residencial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "RES099"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Catálogo_Vigente",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "Anexo_I_de_las_fichas_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Catálogo_Vigente",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "SECRETARIA_DE_ESTADO_DE_ENERGÍA_MINISTERIO_DIRECCIÓN_GENERAL_DE_PLANIFICACIÓN_Y_PARA_LA_TRANSICIÓN_ECOLÓGICA_Y_EL_RETO_DEMOGRÁFICO_COORDINACIÓN_ENERGÉTICA_TRA020_Sistema_de_telemetría_y_geoposicionamiento_en_flota_de_transporte"
     },
     {
         "categoria": "libre",
@@ -1431,97 +1251,19 @@
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND040_ANEXO_III_DEMANDA_ANUAL_DE_ENERGÍA_PARA_ACS"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND210_Reducción_de_la_presión_de_condensación_en_instalación_frigorífica_centralizada_o_compacta_por_cambio_a_tecnología_más_eficiente"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND080_Instalación_de_una_cámara_isobárica_o_intercambiador_de_presión_CIP"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND200_Implantación_de_sistemas_economizadores_o_multietapa_en_instalación_frigorífica_centralizada_o_compacta"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND140_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND290_Recuperación_de_calor_en_circuito_frigorífico"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND150_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND190_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FORMULA"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND140_Reforma_sustitución_o_nueva_instalación_de_planta_enfriadora_de_procesos_de_alta_eficiencia"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND260_Sustitución_de_un_Sistema_de_Alimentación_Ininterrumpida_SAI"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND081_Sustitución_del_recuperador_cámara_isobárica_o_intercambiador_de_presión_CIP"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
         "cod": "IND220_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND020_ANEXO_II_TABLAS"
+        "cod": "IND120_Sustitución_de_quemador_modulante_de_caldera_de_combustión_de_gas"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND050_ANEXO_II_TIEMPO_ANUAL_DE_FUNCIONAMIENTO_DEL_SISTEMA_DE"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND070_Sustitución_de_bomba_de_alta_presión_por_una_bomba_de_pistones_axiales"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND150_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+        "cod": "IND090_ANEXO_II_INFORME_JUSTIFICATIVO_DE_LA_DEMANDA_DE_AIRE"
     },
     {
         "categoria": "libre",
@@ -1533,37 +1275,55 @@
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND160_ANEXO_II_valores_de_referencia_de_la_fórmula"
+        "cod": "IND210_Reducción_de_la_presión_de_condensación_en_instalación_frigorífica_centralizada_o_compacta_por_cambio_a_tecnología_más_eficiente"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND040_Sustitución_de_caldera_de_combustión_existente_por_bomba_de_calor"
+        "cod": "IND090_Sustitución_o_reemplazo_de_compresor_de_aire_por_uno_más_eficiente"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND060_ANEXO_V_DOCUMENTACIÓN_TÉCNICA"
+        "cod": "IND060_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_ESTACIONAL_DE_EQUIPOS"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND230_Recuperación_de_calor_desde_procesos_exotérmicos_a_otros_procesos_endotérmicos_de_la_misma_planta"
+        "cod": "IND190_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FORMULA"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND110_Recuperación_de_calor_de_un_compresor_para_uso_de_calefacción"
+        "cod": "IND150_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND220_Aumento_de_la_presión_de_evaporación_por_cambio_a_tecnología_más_eficiente_en_una_instalación_frigorífica_centralizada_o_compacta"
+        "cod": "IND060_Sustitución_de_generador_para_climatización_por_bomba_de_calor_de_accionamiento_eléctrico"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND030_ANEXO_II_TABLAS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND240_Implantación_de_variador_de_velocidad"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND010_ANEXO_III_CERTIFICADO_DE_LA_CORRECTA_REALIZACIÓN_DE_LA"
     },
     {
         "categoria": "libre",
@@ -1581,49 +1341,43 @@
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND010_ANEXO_III_CERTIFICADO_DE_LA_CORRECTA_REALIZACIÓN_DE_LA"
+        "cod": "IND230_ANEXO_II_INFORME_JUSTIFICATIVO_DE_LOS_EQUIPOS_QUE_CEDEN"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND270_Sustitución_de_transporte_neumático_de_sólidos_por_sistema_de_transporte_mecánico"
+        "cod": "IND070_Sustitución_de_bomba_de_alta_presión_por_una_bomba_de_pistones_axiales"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND280_Sustitución_de_bomba_por_otra_más_eficiente"
+        "cod": "IND190_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND240_Implantación_de_variador_de_velocidad"
+        "cod": "IND060_ANEXO_III_EQUIVALENCIAS_CLIMAS_CTE_ZONAS_CLIMÁTICAS"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND250_Sustitución_total_o_parcial_de_la_instalación_térmica_por_tecnología_solar_térmica"
+        "cod": "IND160_ANEXO_II_valores_de_referencia_de_la_fórmula"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND060_ANEXO_IV_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
+        "cod": "IND010_ANEXO_II_INFORME_JUSTIFICATIVO_DE_LA_INSTALACIÓN_OBJETO_DE"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND090_Sustitución_o_reemplazo_de_compresor_de_aire_por_uno_más_eficiente"
-    },
-    {
-        "categoria": "libre",
-        "sector": "Industrial",
-        "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND280_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_TOTAL_DE_LA_BOMBA"
+        "cod": "IND150_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
     },
     {
         "categoria": "libre",
@@ -1635,13 +1389,19 @@
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND020_Sustitución_del_refrigerante_de_una_instalación_frigorífica"
+        "cod": "IND210_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND010_ANEXO_IV_PÉRDIDAS_TÉRMICAS_OBJETIVO_DE_ACUERDO_CON"
+        "cod": "IND220_Aumento_de_la_presión_de_evaporación_por_cambio_a_tecnología_más_eficiente_en_una_instalación_frigorífica_centralizada_o_compacta"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND040_Sustitución_de_caldera_de_combustión_existente_por_bomba_de_calor"
     },
     {
         "categoria": "libre",
@@ -1653,31 +1413,193 @@
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND120_Sustitución_de_quemador_modulante_de_caldera_de_combustión_de_gas"
+        "cod": "IND040_ANEXO_III_DEMANDA_ANUAL_DE_ENERGÍA_PARA_ACS"
     },
     {
         "categoria": "libre",
         "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "IND210_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
+        "cod": "IND210_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
     },
     {
         "categoria": "libre",
-        "sector": "Catálogo_Vigente",
+        "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "Anexo_I_de_las_fichas_ANEXO_I_DECLARACIÓN_RESPONSABLE_FORMALIZADA_POR_EL"
+        "cod": "IND160_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
     },
     {
         "categoria": "libre",
-        "sector": "Catálogo_Vigente",
+        "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "SECRETARIA_DE_ESTADO_DE_ENERGÍA_MINISTERIO_DIRECCIÓN_GENERAL_DE_PLANIFICACIÓN_Y_PARA_LA_TRANSICIÓN_ECOLÓGICA_Y_EL_RETO_DEMOGRÁFICO_COORDINACIÓN_ENERGÉTICA_TRA020_Sistema_de_telemetría_y_geoposicionamiento_en_flota_de_transporte"
+        "cod": "IND260_Sustitución_de_un_Sistema_de_Alimentación_Ininterrumpida_SAI"
     },
     {
         "categoria": "libre",
-        "sector": "Agrario",
+        "sector": "Industrial",
         "grupo": "Certificados_de_ahorro_energético",
-        "cod": "AGR020_Recuperación_del_calor_del_proceso_de_preenfriamiento_de_la_leche_para_usos_térmicos_en_la_explotación_ganadera"
+        "cod": "IND280_ANEXO_II_CÁLCULO_DEL_RENDIMIENTO_TOTAL_DE_LA_BOMBA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND140_Reforma_sustitución_o_nueva_instalación_de_planta_enfriadora_de_procesos_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND040_ANEXO_II_DECLARACIÓN_FÓRMULAS_PARA_REALIZAR_LA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND050_Sustitución_del_sistema_de_iluminación_por_sistema_con_fuentes_luminosas_y_o_luminarias_tipo_LED"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND190_División_de_líneas_de_evaporación_en_instalación_frigorífica_centralizada"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND230_Recuperación_de_calor_desde_procesos_exotérmicos_a_otros_procesos_endotérmicos_de_la_misma_planta"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND200_ANEXO_II_VALORES_DE_REFERENCIA_DE_LA_FÓRMULA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND010_ANEXO_IV_PÉRDIDAS_TÉRMICAS_OBJETIVO_DE_ACUERDO_CON"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND080_Instalación_de_una_cámara_isobárica_o_intercambiador_de_presión_CIP"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND280_Sustitución_de_bomba_por_otra_más_eficiente"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND200_Implantación_de_sistemas_economizadores_o_multietapa_en_instalación_frigorífica_centralizada_o_compacta"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND020_ANEXO_II_TABLAS"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND220_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND260_ANEXO_II_DECLARACIÓN_RESPONSABLE_POR_LA_EMPRESA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND050_ANEXO_II_TIEMPO_ANUAL_DE_FUNCIONAMIENTO_DEL_SISTEMA_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND250_Sustitución_total_o_parcial_de_la_instalación_térmica_por_tecnología_solar_térmica"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND030_Sustitución_de_compresor_para_instalación_frigorífica"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND060_ANEXO_V_DOCUMENTACIÓN_TÉCNICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND160_Unidad_condensadora_de_alta_eficiencia"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND170_Sustitución_de_motores_eléctricos_de_inducción"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND110_Recuperación_de_calor_de_un_compresor_para_uso_de_calefacción"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND020_Sustitución_del_refrigerante_de_una_instalación_frigorífica"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND140_ANEXO_III_INFORME_JUSTIFICATIVO_DE_LA_CENTRAL_FRIGORÍFICA"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND081_Sustitución_del_recuperador_cámara_isobárica_o_intercambiador_de_presión_CIP"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND270_Sustitución_de_transporte_neumático_de_sólidos_por_sistema_de_transporte_mecánico"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND020_ANEXO_III_NOTA_INFORMATIVA_ACERCA_DE_LA_SUSTITUCIÓN_DE"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND290_Recuperación_de_calor_en_circuito_frigorífico"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Industrial",
+        "grupo": "Certificados_de_ahorro_energético",
+        "cod": "IND060_ANEXO_IV_FÓRMULAS_PARA_OBTENER_LOS_COEFICIENTES_DE"
     },
     {
         "categoria": "libre",
@@ -1689,6 +1611,114 @@
         "categoria": "libre",
         "sector": "Agrario",
         "grupo": "Certificados_de_ahorro_energético",
+        "cod": "AGR020_Recuperación_del_calor_del_proceso_de_preenfriamiento_de_la_leche_para_usos_térmicos_en_la_explotación_ganadera"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Agrario",
+        "grupo": "Certificados_de_ahorro_energético",
         "cod": "AGR010_ANEXO_III_DECLARACIÓN_RESPONSABLE_DEL_VALOR_DEL"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Facturación_por_potencia",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEP010_Facturación_por_potencia_con_equipos_de_medida_tipo_1_2_o_3"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Facturación_por_potencia",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEP050_Facturación_por_potencia_con_equipos_de_medida_tipo_4_o_5"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Facturación_Por_Energía_Activa",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEEA010_Cálculo_de_los_perfiles_de_consumo_para_los_puntos_de_medida_tipo_4_y_tipo_5_de_consumidores_que_no_dispongan_de_registro_horario_de_consumo"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Facturación_Por_Energía_Reactiva",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEER030_Facturación_Por_energía_reactiva"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Tipos_de_contratos",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEC050_Contrato_de_energía_indexado_al_pool"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Varios",
+        "grupo": "Optimización_de_contratos_energéticos",
+        "cod": "OCEV040_Transformadores_de_intensidad"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Intro",
+        "grupo": "Sistemas_de_almacenamiento_energético",
+        "cod": "SAE000_Sistemas_de_almacenamiento_energético"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Intro",
+        "grupo": "Recarga_de_vehículos_eléctricos",
+        "cod": "RVE000_Recarga_de_vehículos_eléctricos"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Intro",
+        "grupo": "Sistemas_de_gestión_energética",
+        "cod": "SGE000_Sistemas_de_gestión_energética"
+    },
+    {
+        "categoria": "libre",
+        "sector": "KNX",
+        "grupo": "AAA",
+        "cod": "Dkp010ProyectoDeInstalaciónDomóticaEnViviendaUnifamiliar"
+    },
+    {
+        "categoria": "libre",
+        "sector": "KNX",
+        "grupo": "AAA",
+        "cod": "ProyectoDeInstalaciónDomóticaEnViviendaUnifamiliar_FRoman"
+    },
+    {
+        "categoria": "libre",
+        "sector": "KNX",
+        "grupo": "AAA",
+        "cod": "Dkp010DisenoYPrescripcionKnx"
+    },
+    {
+        "categoria": "libre",
+        "sector": "AAA",
+        "grupo": "AAA",
+        "cod": "Codigo012Modelo"
+    },
+    {
+        "categoria": "libre",
+        "sector": "AAA",
+        "grupo": "AAA",
+        "cod": "AAA000_Plantilla"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Intro",
+        "grupo": "Autoconsumo_energético",
+        "cod": "AE000_Autoconsumo_energético"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Intro",
+        "grupo": "Comunidades_energéticas",
+        "cod": "CE001_Estatutos_de_la_Cooperativa_Energética"
+    },
+    {
+        "categoria": "libre",
+        "sector": "Intro",
+        "grupo": "Comunidades_energéticas",
+        "cod": "CE000_Comunidades_energéticas"
     }
 ]
