@@ -78,7 +78,6 @@
         rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='%23000000' d='M19 12h3L12 3 2 12h3v8h2v-2h10v2h2v-8zM7.21 10h9.58l.21.19V12H7v-1.81l.21-.19zm7.36-2H9.43L12 5.69 14.57 8zM7 16v-2h10v2H7z'/></svg>">    
     <style>
         :root {
             --primary: #1a365d;
@@ -1056,6 +1055,40 @@
             }
         }
     </style>
+
+
+    <script>
+        window.web = "Vatiaco";
+        var initials = web.match(/[A-Z]/g)?.join("").slice(0, 2) || "VA";
+        generateFavicon(initials);
+        document.title = web + " - Instalaciones Eléctricas Integrales"; // Asignar dinámicamente el título
+
+        // Función para generar el favicon
+        function generateFavicon(initials) {
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+
+            canvas.width = 64;
+            canvas.height = 64;
+
+            // Fondo negro
+            context.fillStyle = "red";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Texto en color blanco sobre el fondo negro
+            context.font = "bold 40px sans-serif";
+            context.textAlign = "center";
+            context.textBaseline = "middle";
+            context.fillStyle = "white";
+            context.fillText(initials, canvas.width / 2, canvas.height / 2);
+
+            // Crear el favicon
+            var link = document.createElement('link');
+            link.rel = 'icon';
+            link.href = canvas.toDataURL('image/png');
+            document.head.appendChild(link);
+        }
+    </script>
 </head>
 
 <body>
